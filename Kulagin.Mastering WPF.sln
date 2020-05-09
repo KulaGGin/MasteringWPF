@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.Mastering WPF.ViewM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.Mastering WPF.DataModels", "Kulagin.Mastering WPF.DataModels\Kulagin.Mastering WPF.DataModels.csproj", "{20CF13C7-9EFA-45C9-9786-5ED75DA46933}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.Mastering WPF.Extensions", "Kulagin.Mastering WPF.Extensions\Kulagin.Mastering WPF.Extensions.csproj", "{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{20CF13C7-9EFA-45C9-9786-5ED75DA46933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20CF13C7-9EFA-45C9-9786-5ED75DA46933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20CF13C7-9EFA-45C9-9786-5ED75DA46933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
