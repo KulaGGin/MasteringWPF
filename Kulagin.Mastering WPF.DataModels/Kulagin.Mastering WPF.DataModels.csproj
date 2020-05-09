@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDataModel.cs" />
+    <Compile Include="BaseSynchronizableDataModel.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
     <Compile Include="Enums\ObjectState.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
