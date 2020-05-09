@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Kulagin.Mastering_WPF.Models.Business {
+namespace Kulagin.Mastering_WPF.DataModels {
     public class User {
         public User(Guid id, string name, int age) {
             Id = id;
