@@ -7,9 +7,6 @@ using System.Threading.Tasks;
 
 namespace Kulagin.Mastering_WPF.DataModels.Interfaces {
     public interface IAuditable {
-        DateTime CreatedOn { get; set; }
-        User CreatedBy { get; set; }
-        DateTime? UpdatedOn { get; set; }
-        User UpdatedBy { get; set; }
+        Auditable Auditable { get; set; }
     }
 }
