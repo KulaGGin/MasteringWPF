@@ -5,6 +5,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using CompanyName.ApplicationName.DataModels.Collections;
+using Kulagin.Mastering_WPF.DataModels;
+using Kulagin.Mastering_WPF.DataModels.Interfaces;
 
 
 namespace Kulagin.Mastering_WPF.ViewModels {
