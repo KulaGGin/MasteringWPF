@@ -94,5 +94,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.DataModels\Kulagin.Mastering WPF.DataModels.csproj">
+      <Project>{20cf13c7-9efa-45c9-9786-5ed75da46933}</Project>
+      <Name>Kulagin.Mastering WPF.DataModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.Managers\Kulagin.Mastering WPF.Managers.csproj">
+      <Project>{c1ed9bd2-2973-4e14-b8ca-f12818374149}</Project>
+      <Name>Kulagin.Mastering WPF.Managers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.Models\Kulagin.Mastering WPF.Models.csproj">
+      <Project>{c8a88531-70f6-4440-b400-84a785e99026}</Project>
+      <Name>Kulagin.Mastering WPF.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
