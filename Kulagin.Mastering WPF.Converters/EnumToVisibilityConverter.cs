@@ -10,7 +10,6 @@ namespace Kulagin.Mastering_WPF.Converters {
     public class EnumToVisibilityConverter : BaseVisibilityConverter, IValueConverter {
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
-
             if (value == null || value.GetType() != typeof(Enum) && value.GetType().BaseType != typeof(Enum) || parameter == null) return false;
             string enumValue = value.ToString();
             string targetValue = parameter.ToString();
@@ -20,9 +19,7 @@ namespace Kulagin.Mastering_WPF.Converters {
             return boolValue ? Visibility.Visible : FalseVisibilityValue;
         }
 
-
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
-
             if (value == null || value.GetType() != typeof(Visibility) || parameter == null) return null;
             Visibility usedValue = (Visibility)value;
             string targetValue = parameter.ToString();
@@ -32,6 +29,5 @@ namespace Kulagin.Mastering_WPF.Converters {
 
             return DependencyProperty.UnsetValue;
         }
-
     }
 }

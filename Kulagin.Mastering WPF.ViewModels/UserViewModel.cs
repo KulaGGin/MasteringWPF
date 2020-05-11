@@ -8,7 +8,6 @@ namespace Kulagin.Mastering_WPF.ViewModels {
         private User model;
         private bool isSelected = false;
 
-
         public UserViewModel(User model) {
             Model = model;
         }

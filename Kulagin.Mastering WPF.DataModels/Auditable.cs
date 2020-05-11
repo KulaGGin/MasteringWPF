@@ -2,12 +2,10 @@
 
 
 namespace Kulagin.Mastering_WPF.DataModels {
-
     public class Auditable : BaseDataModel {
         private DateTime createdOn;
         private DateTime? updatedOn;
         private User createdBy, updatedBy;
-
 
         public Auditable(DateTime createdOn, User createdBy, DateTime? updatedOn, User updatedBy) {
             CreatedOn = createdOn;
@@ -16,14 +14,11 @@ namespace Kulagin.Mastering_WPF.DataModels {
             UpdatedBy = updatedBy;
         }
 
-
         public Auditable(User createdBy) : this(DateTime.Now, createdBy, null, new User()) {
         }
 
-
         public Auditable() {
         }
-
 
         public DateTime CreatedOn {
             get { return createdOn; }
@@ -56,7 +51,6 @@ namespace Kulagin.Mastering_WPF.DataModels {
                 NotifyPropertyChanged();
             }
         }
-
 
         public override string ToString() {
             return UpdatedOn.HasValue

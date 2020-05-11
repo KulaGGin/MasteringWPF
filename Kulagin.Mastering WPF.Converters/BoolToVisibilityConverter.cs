@@ -16,7 +16,6 @@ namespace Kulagin.Mastering_WPF.Converters {
             return boolValue ? Visibility.Visible : FalseVisibilityValue;
         }
 
-
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
             if (value == null || value.GetType() != typeof(Visibility)) return null;
 

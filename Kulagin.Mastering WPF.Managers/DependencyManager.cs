@@ -10,20 +10,16 @@ namespace Kulagin.Mastering_WPF.Managers {
         private static Dictionary<Type, Type> registeredDependencies =
             new Dictionary<Type, Type>();
 
-
         private DependencyManager() {
         }
-
 
         public static DependencyManager Instance { get { return instance ?? (instance = new DependencyManager()); } }
 
         public int Count { get { return registeredDependencies.Count; } }
 
-
         public void ClearRegistrations() {
             registeredDependencies.Clear();
         }
-
 
         public void Register<S, T>() where S : class where T : class {
             if (!typeof(S).IsInterface) throw new ArgumentException("The Sgeneric type parameter of the Register method must be an interface.", "S");
@@ -35,13 +31,11 @@ namespace Kulagin.Mastering_WPF.Managers {
                 registeredDependencies.Add(typeof(S), typeof(T));
         }
 
-
         public T Resolve<T>() where T : class {
             Type type = registeredDependencies[typeof(T)];
 
             return Activator.CreateInstance(type) as T;
         }
-
 
         public T Resolve<T>(params object[] args) where T : class {
             Type type = registeredDependencies[typeof(T)];
