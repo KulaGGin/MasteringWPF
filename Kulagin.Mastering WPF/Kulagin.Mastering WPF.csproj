@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.Converters\Kulagin.Mastering WPF.Converters.csproj">
+      <Project>{3b287f9f-52dc-470f-8cc2-5469ead1483a}</Project>
+      <Name>Kulagin.Mastering WPF.Converters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kulagin.Mastering WPF.DataModels\Kulagin.Mastering WPF.DataModels.csproj">
       <Project>{20cf13c7-9efa-45c9-9786-5ed75da46933}</Project>
       <Name>Kulagin.Mastering WPF.DataModels</Name>
