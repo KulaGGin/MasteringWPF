@@ -2,6 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Kulagin.Mastering_WPF"
+             xmlns:ViewModels="Kulagin/MasteringWPF/ViewModels"
+             xmlns:DataModels="Kulagin/MasteringWPF/DataModels"
+             xmlns:Views="clr-namespace:Kulagin.Mastering_WPF.Views;assembly=Kulagin.MasteringWPF.Views"
              Startup="App_Startup">
     <Application.Resources>
          
