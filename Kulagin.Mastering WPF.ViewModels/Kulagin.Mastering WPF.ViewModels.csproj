@@ -48,6 +48,7 @@
     <Compile Include="AdornerViewModel.cs" />
     <Compile Include="AllUsersViewModel.cs" />
     <Compile Include="BaseViewModel.cs" />
+    <Compile Include="BitRateViewModel.cs" />
     <Compile Include="Business\BaseBusinessViewModel.cs" />
     <Compile Include="Interfaces\IUserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
