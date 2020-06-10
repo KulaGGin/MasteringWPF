@@ -1,8 +1,8 @@
 ﻿<UserControl x:Class="Kulagin.Mastering_WPF.Views.BitRateView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:Converters="Kulagin/MasteringWPF/Converters"
-             xmlns:Enums="clr-namespace:Kulagin.Mastering_WPF.DataModels.Enums;assembly=Kulagin.MasteringWPF.DataModels">
+             xmlns:Enums="clr-namespace:Kulagin.Mastering_WPF.DataModels.Enums;assembly=Kulagin.MasteringWPF.DataModels"
+             xmlns:Converters="clr-namespace:Kulagin.Mastering_WPF.Converters;assembly=Kulagin.MasteringWPF.Converters">
     <UserControl.Resources>
         <Converters:EnumToBoolConverter x:Key="EnumToBoolConverter" />
         <Converters:EnumToDescriptionStringConverter x:Key="EnumToDescriptionStringConverter" />

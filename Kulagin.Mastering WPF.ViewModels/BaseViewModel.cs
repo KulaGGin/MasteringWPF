@@ -2,7 +2,6 @@
 using System.Runtime.CompilerServices;
 using System.Windows.Markup;
 
-[assembly: XmlnsDefinition("Kulagin/MasteringWPF/ViewModels", "Kulagin.Mastering_WPF.ViewModels")]
 namespace Kulagin.Mastering_WPF.ViewModels {
     public class BaseViewModel : INotifyPropertyChanged {
 

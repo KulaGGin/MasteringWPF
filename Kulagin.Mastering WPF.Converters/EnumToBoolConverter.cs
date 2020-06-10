@@ -5,7 +5,6 @@ using System.Windows.Data;
 using System.Windows.Markup;
 
 
-[assembly: XmlnsDefinition("Kulagin/MasteringWPF/Converters", "Kulagin.Mastering_WPF.Converters")]
 namespace Kulagin.Mastering_WPF.Converters {
     [ValueConversion(typeof(Enum), typeof(bool))]
     public class EnumToBoolConverter : IValueConverter {

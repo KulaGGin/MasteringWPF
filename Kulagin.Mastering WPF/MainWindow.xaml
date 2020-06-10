@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kulagin.Mastering_WPF"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        xmlns:ViewModels="clr-namespace:Kulagin.Mastering_WPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
+        xmlns:DataTemplateSelectors="clr-namespace:Kulagin.Mastering_WPF.Views.DataTemplateSelectors;assembly=Kulagin.MasteringWPF.Views"
+        xmlns:Views="clr-namespace:Kulagin.Mastering_WPF.Views;assembly=Kulagin.MasteringWPF.Views"
+        xmlns:Attached="clr-namespace:Kulagin.Mastering_WPF.Views.Attached;assembly=Kulagin.MasteringWPF.Views"
         
+        mc:Ignorable="d"
+        Title="Mastering Windows Presentation Foundation" Width="1280" Height="960" ResizeMode="NoResize">
+    <Window.Resources>
+        <ViewModels:MainWindowViewModel x:Key="MainWindowViewModel" />
+        <ViewModels:MenuViewModel x:Key="MenuViewModel" />
+        <ViewModels:BitRateViewModel x:Key="BitRateViewModel" />
+        <ViewModels:WeightMeasurementsViewModel x:Key="WeightMeasurementsViewModel"/>
+        <ViewModels:AllUsersViewModel x:Key="AllUsersViewModel" />
+        <ViewModels:AdornerViewModel x:Key="AdornerViewModel" />
+    </Window.Resources>
+    <Grid DataContext="{StaticResource MainWindowViewModel}">
+        <ContentControl Content="{StaticResource MenuViewModel}" />
+        <Views:ButtonTemplateView />
     </Grid>
 </Window>

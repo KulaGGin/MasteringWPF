@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.Mastering_WPF.Views"
-             xmlns:ViewModels="Kulagin/MasteringWPF/ViewModels"
+             xmlns:ViewModels="clr-namespace:Kulagin.Mastering_WPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Menu ItemsSource="{Binding MenuItems}" FontSize="14" Background="White">

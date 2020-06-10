@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.Mastering_WPF.Views"
              xmlns:DataTemplateSelectors="clr-namespace:Kulagin.Mastering_WPF.Views.DataTemplateSelectors"
-             xmlns:ViewModels="Kulagin/MasteringWPF/ViewModels"
-             xmlns:Converters="Kulagin/MasteringWPF/Converters"
              xmlns:ComponentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
              xmlns:DataModels="Kulagin/MasteringWPF/DataModels"
+             xmlns:ViewModels="clr-namespace:Kulagin.Mastering_WPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
+             xmlns:Converters="clr-namespace:Kulagin.Mastering_WPF.Converters;assembly=Kulagin.MasteringWPF.Converters"
              mc:Ignorable="d"
              TextElement.FontSize="14">
     <UserControl.Resources>
