@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Kulagin.Mastering_WPF.Views"
+                    xmlns:Attached="clr-namespace:Kulagin.Mastering_WPF.Views.Attached">
+    <ControlTemplate TargetType="{x:Type Button}" x:Key="ButtonTemplate">
+        <Grid>
+            <Ellipse Fill="{TemplateBinding Background}"
+                     Stroke="{TemplateBinding Foreground}" StrokeThickness="{Binding (Attached:ButtonProperties.StrokeThickness), RelativeSource={RelativeSource TemplatedParent}}"
+                     Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" />
+            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                              TextElement.FontWeight="{TemplateBinding FontWeight}"
+                              TextElement.FontSize="{TemplateBinding FontSize}" />
+        </Grid>
+    </ControlTemplate>
+    <Style TargetType="{x:Type Button}" x:Key="ButtonTemplateStyle">
+        <Setter Property="Template" Value="{StaticResource ButtonTemplate}" />
+    </Style>
+</ResourceDictionary>
