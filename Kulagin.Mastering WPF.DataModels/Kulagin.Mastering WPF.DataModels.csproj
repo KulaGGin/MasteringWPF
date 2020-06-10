@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kulagin.Mastering_WPF.DataModels</RootNamespace>
-    <AssemblyName>Kulagin.Mastering WPF.DataModels</AssemblyName>
+    <AssemblyName>Kulagin.MasteringWPF.DataModels</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

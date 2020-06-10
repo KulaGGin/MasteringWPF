@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kulagin.Mastering_WPF.Extensions</RootNamespace>
-    <AssemblyName>Kulagin.Mastering WPF.Extensions</AssemblyName>
+    <AssemblyName>Kulagin.MasteringWPF.Extensions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

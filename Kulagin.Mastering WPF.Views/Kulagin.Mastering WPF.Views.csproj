@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kulagin.Mastering_WPF.Views</RootNamespace>
-    <AssemblyName>Kulagin.Mastering WPF.Views</AssemblyName>
+    <AssemblyName>Kulagin.MasteringWPF.Views</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

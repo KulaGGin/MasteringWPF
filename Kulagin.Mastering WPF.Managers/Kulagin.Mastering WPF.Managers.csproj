@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kulagin.Mastering_WPF.Managers</RootNamespace>
-    <AssemblyName>Kulagin.Mastering WPF.Managers</AssemblyName>
+    <AssemblyName>Kulagin.MasteringWPF.Managers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
