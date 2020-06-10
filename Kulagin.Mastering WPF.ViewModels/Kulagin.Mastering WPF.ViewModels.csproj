@@ -56,6 +56,10 @@
       <Project>{20cf13c7-9efa-45c9-9786-5ed75da46933}</Project>
       <Name>Kulagin.Mastering WPF.DataModels</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.Extensions\Kulagin.Mastering WPF.Extensions.csproj">
+      <Project>{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}</Project>
+      <Name>Kulagin.Mastering WPF.Extensions</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
