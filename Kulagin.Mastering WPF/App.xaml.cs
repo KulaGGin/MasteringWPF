@@ -8,6 +8,8 @@ using System.Windows;
 using Kulagin.Mastering_WPF.Managers;
 using Kulagin.Mastering_WPF.Models.DataProviders;
 using Kulagin.Mastering_WPF.Models.Interfaces;
+using Kulagin.Mastering_WPF.ViewModels;
+using Kulagin.Mastering_WPF.ViewModels.Interfaces;
 
 
 namespace Kulagin.Mastering_WPF {
