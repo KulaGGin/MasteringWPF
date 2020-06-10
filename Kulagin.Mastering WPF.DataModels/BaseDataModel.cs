@@ -1,8 +1,9 @@
 ﻿using Kulagin.Mastering_WPF.Extensions;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Markup;
 
-
+[assembly: XmlnsDefinition("Kulagin/MasteringWPF/DataModels", "Kulagin.Mastering_WPF.DataModels")]
 namespace Kulagin.Mastering_WPF.DataModels {
     public abstract class BaseDataModel : INotifyPropertyChanged {
         protected BaseDataModel() {
