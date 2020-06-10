@@ -111,6 +111,10 @@
       <Project>{c8a88531-70f6-4440-b400-84a785e99026}</Project>
       <Name>Kulagin.Mastering WPF.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.ViewModels\Kulagin.Mastering WPF.ViewModels.csproj">
+      <Project>{f9c2cca2-2871-4e31-af3a-e4fc9244bfd7}</Project>
+      <Name>Kulagin.Mastering WPF.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
