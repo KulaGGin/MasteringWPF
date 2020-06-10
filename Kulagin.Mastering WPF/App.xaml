@@ -7,6 +7,50 @@
              xmlns:Views="clr-namespace:Kulagin.Mastering_WPF.Views;assembly=Kulagin.MasteringWPF.Views"
              Startup="App_Startup">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type ViewModels:BitRateViewModel}">
+            <Views:BitRateView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:WeightMeasurementsViewModel}">
+            <Views:WeightMeasurementsView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:AllUsersViewModel}">
+            <Views:AllUsersView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:MenuViewModel}" >
+            <Views:MenuView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:AdornerViewModel}">
+            <Views:AdornerView />
+        </DataTemplate>
+        <!--<DataTemplate DataType="{x:Type DataModels:User}">
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,0,0,5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Name}" Margin="0,0,3,0" />
+                    <TextBlock Text="{Binding Age, StringFormat={}({0})}" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>-->
+        <DataTemplate x:Key="UserTemplate" DataType="{x:Type DataModels:User}">
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,0,0,5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Name}" Margin="0,0,3,0" />
+                    <TextBlock Text="{Binding Age, StringFormat={}({0})}" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="InverseUserTemplate" DataType="{x:Type DataModels:User}">
+            <Border BorderBrush="White" BorderThickness="1" Background="Black" TextElement.Foreground="White" CornerRadius="5" Padding="8,3,5,5" Margin="0,0,0,5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Name}" Margin="0,0,3,0" />
+                    <TextBlock Text="{Binding Age, StringFormat={}({0})}" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        <Style x:Key="DemonstrationLabel" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+        </Style>
     </Application.Resources>
 </Application>
