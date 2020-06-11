@@ -9,7 +9,7 @@ using System.Windows.Controls;
 
 namespace Kulagin.Mastering_WPF.Views.Attached {
     public class ButtonProperties : DependencyObject {
-        public static readonly DependencyProperty StrokeThicknessProperty = 
+        public static readonly DependencyProperty StrokeThicknessProperty =
             DependencyProperty.RegisterAttached("StrokeThickness",
                                                 typeof(double), typeof(ButtonProperties),
                                                 new FrameworkPropertyMetadata(default(double)));
@@ -22,21 +22,19 @@ namespace Kulagin.Mastering_WPF.Views.Attached {
             dependencyObject.SetValue(StrokeThicknessProperty, thickness);
         }
 
-
         private static readonly DependencyPropertyKey originalToolTipPropertyKey =
-                DependencyProperty.RegisterAttachedReadOnly("OriginalToolTip",
-                                                            typeof(string), typeof(ButtonProperties),
-                                                            new FrameworkPropertyMetadata(default(string)));
+            DependencyProperty.RegisterAttachedReadOnly("OriginalToolTip",
+                                                        typeof(string), typeof(ButtonProperties),
+                                                        new FrameworkPropertyMetadata(default(string)));
 
-        public static readonly DependencyProperty OriginalToolTipProperty =  originalToolTipPropertyKey.DependencyProperty;
+        public static readonly DependencyProperty OriginalToolTipProperty = originalToolTipPropertyKey.DependencyProperty;
 
         public static string GetOriginalToolTip(DependencyObject dependencyObject) {
             return (string)dependencyObject.GetValue(OriginalToolTipProperty);
         }
 
-
         public static DependencyProperty DisabledToolTipProperty =
-            DependencyProperty.RegisterAttached("DisabledToolTip", 
+            DependencyProperty.RegisterAttached("DisabledToolTip",
                                                 typeof(string), typeof(ButtonProperties),
                                                 new UIPropertyMetadata(string.Empty, OnDisabledToolTipChanged));
 
@@ -52,10 +50,10 @@ namespace Kulagin.Mastering_WPF.Views.Attached {
             Button button = dependencyObject as Button;
             ToolTipService.SetShowOnDisabled(button, true);
 
-            if(e.OldValue == null && e.NewValue != null) {
+            if (e.OldValue == null && e.NewValue != null) {
                 button.IsEnabledChanged += Button_IsEnabledChanged;
             }
-            else if(e.OldValue != null && e.NewValue == null) {
+            else if (e.OldValue != null && e.NewValue == null) {
                 button.IsEnabledChanged -= Button_IsEnabledChanged;
             }
         }
@@ -63,7 +61,7 @@ namespace Kulagin.Mastering_WPF.Views.Attached {
         private static void Button_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e) {
             Button button = sender as Button;
 
-            if(GetOriginalToolTip(button) == null) {
+            if (GetOriginalToolTip(button) == null) {
                 button.SetValue(originalToolTipPropertyKey, button.ToolTip.ToString());
             }
 
