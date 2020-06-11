@@ -21,10 +21,15 @@
     </Window.Resources>
     <Grid DataContext="{StaticResource MainWindowViewModel}">
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <ContentControl Content="{StaticResource MenuViewModel}" />
-        <Views:NamedControlTextBox Grid.Row="1" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
+            <Button x:Name="SaveButton" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Save"
+                    Attached:ButtonProperties.DisabledToolTip="You must correct validation errors before saving"
+                    ToolTip="Saves the user" Margin="0,0,5,0"/>
+            <Button x:Name="DisableButton" Content="Disable Other Button" HorizontalAlignment="Center" Click="DisableButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

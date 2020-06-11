@@ -21,5 +21,9 @@ namespace Kulagin.Mastering_WPF {
         public MainWindow() {
             InitializeComponent();
         }
+
+        private void DisableButton_Click(object sender, RoutedEventArgs e) {
+            SaveButton.IsEnabled = false;
+        }
     }
 }
