@@ -25,6 +25,6 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <ContentControl Content="{StaticResource MenuViewModel}" />
-        <Views:HiddenTextBox Grid.Row="1" />
+        <Views:NamedControlTextBox Grid.Row="1" />
     </Grid>
 </Window>
