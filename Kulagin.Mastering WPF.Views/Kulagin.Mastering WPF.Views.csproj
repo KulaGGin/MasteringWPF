@@ -73,6 +73,9 @@
     <Compile Include="DockPanelView.xaml.cs">
       <DependentUpon>DockPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HiddenTextBox.xaml.cs">
+      <DependentUpon>HiddenTextBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DockPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HiddenTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

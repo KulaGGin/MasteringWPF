@@ -20,7 +20,11 @@
         <ViewModels:AdornerViewModel x:Key="AdornerViewModel" />
     </Window.Resources>
     <Grid DataContext="{StaticResource MainWindowViewModel}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
         <ContentControl Content="{StaticResource MenuViewModel}" />
-        <Views:ButtonTemplateView />
+        <Views:HiddenTextBox Grid.Row="1" />
     </Grid>
 </Window>
