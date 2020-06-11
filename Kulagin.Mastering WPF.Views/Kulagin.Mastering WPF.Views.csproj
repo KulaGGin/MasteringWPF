@@ -69,6 +69,9 @@
     <Compile Include="CircumferencePanelView.xaml.cs">
       <DependentUpon>CircumferencePanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\AddressControl.xaml.cs">
+      <DependentUpon>AddressControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataTemplateSelectors\UserAgeDataTemplateSelector.cs" />
     <Compile Include="DockPanelView.xaml.cs">
       <DependentUpon>DockPanelView.xaml</DependentUpon>
@@ -142,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CircumferencePanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\AddressControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
