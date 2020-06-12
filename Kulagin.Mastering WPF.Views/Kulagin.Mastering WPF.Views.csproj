@@ -109,6 +109,10 @@
       <Project>{3b287f9f-52dc-470f-8cc2-5469ead1483a}</Project>
       <Name>Kulagin.Mastering WPF.Converters</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.CustomControls\Kulagin.Mastering WPF.CustomControls.csproj">
+      <Project>{7df4bd55-0b28-4ad8-b15a-6f32ea42b7dc}</Project>
+      <Name>Kulagin.Mastering WPF.CustomControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kulagin.Mastering WPF.DataModels\Kulagin.Mastering WPF.DataModels.csproj">
       <Project>{20cf13c7-9efa-45c9-9786-5ed75da46933}</Project>
       <Name>Kulagin.Mastering WPF.DataModels</Name>
