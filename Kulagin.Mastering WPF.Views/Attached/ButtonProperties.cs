@@ -50,10 +50,11 @@ namespace Kulagin.Mastering_WPF.Views.Attached {
             Button button = dependencyObject as Button;
             ToolTipService.SetShowOnDisabled(button, true);
 
-            if (e.OldValue == null && e.NewValue != null) {
+            string oldValue = (string)e.OldValue, newValue = (string)e.NewValue;
+            if (oldValue.Length == 0 && newValue.Length > 0) {
                 button.IsEnabledChanged += Button_IsEnabledChanged;
             }
-            else if (e.OldValue != null && e.NewValue == null) {
+            else if (oldValue.Length > 0 && newValue.Length == 0) {
                 button.IsEnabledChanged -= Button_IsEnabledChanged;
             }
         }
