@@ -18,6 +18,7 @@
         <ViewModels:WeightMeasurementsViewModel x:Key="WeightMeasurementsViewModel"/>
         <ViewModels:AllUsersViewModel x:Key="AllUsersViewModel" />
         <ViewModels:AdornerViewModel x:Key="AdornerViewModel" />
+        <ViewModels:MeterViewModel x:Key="MeterViewModel" />
     </Window.Resources>
     <Grid DataContext="{StaticResource MainWindowViewModel}">
         <Grid.RowDefinitions>
@@ -30,6 +31,8 @@
                     Attached:ButtonProperties.DisabledToolTip="You must correct validation errors before saving"
                     ToolTip="Saves the user" Margin="0,0,5,0"/>
             <Button x:Name="DisableButton" Content="Disable Other Button" HorizontalAlignment="Center" Click="DisableButton_Click"/>
+            <ContentControl Content="{StaticResource MeterViewModel}" />
+            <Views:MeterView DataContext="{StaticResource MeterViewModel}"></Views:MeterView>
         </StackPanel>
     </Grid>
 </Window>
