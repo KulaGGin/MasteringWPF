@@ -85,6 +85,9 @@
     <Compile Include="MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MeterView.xaml.cs">
+      <DependentUpon>MeterView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NamedControlTextBox.xaml.cs">
       <DependentUpon>NamedControlTextBox.xaml</DependentUpon>
     </Compile>
@@ -172,6 +175,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MeterView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
