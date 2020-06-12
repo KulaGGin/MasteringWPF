@@ -13,8 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kulagin.Mastering_WPF.CustomControls
-{
+
+namespace Kulagin.Mastering_WPF.CustomControls {
     /// <summary>
     /// Follow steps 1a or 1b and then 2 to use this custom control in a XAML file.
     ///
@@ -44,11 +44,43 @@ namespace Kulagin.Mastering_WPF.CustomControls
     ///     <MyNamespace:CustomControl1/>
     ///
     /// </summary>
-    public class Meter : Control
-    {
-        static Meter()
-        {
+    public class Meter : Control {
+        static Meter() {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(Meter), new FrameworkPropertyMetadata(typeof(Meter)));
+        }
+
+        public static readonly DependencyProperty ValueProperty =
+            DependencyProperty.Register(nameof(Value),
+                                        typeof(double), typeof(Meter),
+                                        new PropertyMetadata(0.0, OnValueChanged, CoerceValue));
+
+        private static object CoerceValue(DependencyObject dependencyObject, object value) {
+            return Math.Min(Math.Max((double)value, 0.0), 1.0);
+        }
+
+        private static void OnValueChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e) {
+            Meter meter = (Meter)dependencyObject;
+            meter.SetClipRect(meter);
+        }
+
+        public double Value { get { return (double)GetValue(ValueProperty); } set { SetValue(ValueProperty, value); } }
+
+        public static readonly DependencyPropertyKey clipRectPropertyKey =
+            DependencyProperty.RegisterReadOnly(nameof(ClipRect),
+                                                typeof(Rect), typeof(Meter),
+                                                new PropertyMetadata(new Rect()));
+
+        public static readonly DependencyProperty ClipRectProperty = clipRectPropertyKey.DependencyProperty;
+
+        public Rect ClipRect { get { return (Rect)GetValue(ClipRectProperty); } private set { SetValue(clipRectPropertyKey, value); } }
+
+        public override void OnApplyTemplate() {
+            SetClipRect(this);
+        }
+
+        private void SetClipRect(Meter meter) {
+            double barSize = meter.Value * meter.Height;
+            meter.ClipRect = new Rect(0, meter.Height - barSize, meter.Width, barSize);
         }
     }
 }
