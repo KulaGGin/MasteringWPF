@@ -99,6 +99,9 @@
     <Compile Include="UniformGridView.xaml.cs">
       <DependentUpon>UniformGridView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserView.xaml.cs">
+      <DependentUpon>UserView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModelLocators\BaseViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\UserViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\ViewModelLocator.cs" />
@@ -193,6 +196,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UniformGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
