@@ -48,6 +48,9 @@
     <Compile Include="DependencyManager.cs" />
     <Compile Include="Interfaces\IWindowManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Kulagin.Mastering WPF.DataModels\Kulagin.Mastering WPF.DataModels.csproj">
       <Project>{20cf13c7-9efa-45c9-9786-5ed75da46933}</Project>
       <Name>Kulagin.Mastering WPF.DataModels</Name>
