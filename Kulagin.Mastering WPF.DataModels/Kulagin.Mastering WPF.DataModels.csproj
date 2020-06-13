@@ -53,6 +53,9 @@
     <Compile Include="Collections\BaseSynchronizableCollection.cs" />
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
+    <Compile Include="Enums\MessageBoxButton.cs" />
+    <Compile Include="Enums\MessageBoxButtonSelection.cs" />
+    <Compile Include="Enums\MessageBoxIcon.cs" />
     <Compile Include="Enums\ObjectState.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
     <Compile Include="Interfaces\ISynchronisableDataModel.cs" />
