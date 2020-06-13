@@ -25,9 +25,6 @@ namespace Kulagin.Mastering_WPF {
             DependencyManager.Instance.ClearRegistrations();
             DependencyManager.Instance.Register<IDataProvider, MockDataProvider>();
             DependencyManager.Instance.Register<IUserViewModel, UsersViewModel>();
-            //DependencyManager.Instance.Register<IEmailManager, EmailManager>();
-            //DependencyManager.Instance.Register<IExcelManager, ExcelManager>();
-            //DependencyManager.Instance.Register<IWindowManager, WindowManager>();
         }
     }
 }
