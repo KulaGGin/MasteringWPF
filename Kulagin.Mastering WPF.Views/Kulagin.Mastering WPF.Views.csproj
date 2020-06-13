@@ -99,6 +99,7 @@
     <Compile Include="UniformGridView.xaml.cs">
       <DependentUpon>UniformGridView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelLocators\BaseViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\ViewModelLocator.cs" />
     <Compile Include="WeightMeasurementsView.xaml.cs">
       <DependentUpon>WeightMeasurementsView.xaml</DependentUpon>
