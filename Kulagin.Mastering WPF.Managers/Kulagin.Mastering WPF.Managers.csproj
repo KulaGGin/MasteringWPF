@@ -34,6 +34,7 @@
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +47,10 @@
   <ItemGroup>
     <Compile Include="DependencyManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <ProjectReference Include="..\Kulagin.Mastering WPF.DataModels\Kulagin.Mastering WPF.DataModels.csproj">
+      <Project>{20cf13c7-9efa-45c9-9786-5ed75da46933}</Project>
+      <Name>Kulagin.Mastering WPF.DataModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
