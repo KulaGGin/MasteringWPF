@@ -8,7 +8,6 @@
         xmlns:DataTemplateSelectors="clr-namespace:Kulagin.Mastering_WPF.Views.DataTemplateSelectors;assembly=Kulagin.MasteringWPF.Views"
         xmlns:Views="clr-namespace:Kulagin.Mastering_WPF.Views;assembly=Kulagin.MasteringWPF.Views"
         xmlns:Attached="clr-namespace:Kulagin.Mastering_WPF.Views.Attached;assembly=Kulagin.MasteringWPF.Views"
-        
         mc:Ignorable="d"
         Title="Mastering Windows Presentation Foundation" Width="1280" Height="960" ResizeMode="NoResize">
     <Window.Resources>
@@ -26,13 +25,14 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <ContentControl Content="{StaticResource MenuViewModel}" />
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
-            <Button x:Name="SaveButton" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Save"
-                    Attached:ButtonProperties.DisabledToolTip="You must correct validation errors before saving"
-                    ToolTip="Saves the user" Margin="0,0,5,0"/>
-            <Button x:Name="DisableButton" Content="Disable Other Button" HorizontalAlignment="Center" Click="DisableButton_Click"/>
-            <ContentControl Content="{StaticResource MeterViewModel}" />
-            <Views:MeterView DataContext="{StaticResource MeterViewModel}"></Views:MeterView>
+        <StackPanel Grid.Row="1" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="SaveButton" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Save"
+                        Attached:ButtonProperties.DisabledToolTip="You must correct validation errors before saving"
+                        ToolTip="Saves the user" Margin="0,0,5,0" />
+                <Button x:Name="DisableButton" Content="Disable Other Button" HorizontalAlignment="Center"
+                        Click="DisableButton_Click" /></StackPanel>
+            <ContentControl Content="{StaticResource AllUsersViewModel}" />
         </StackPanel>
     </Grid>
 </Window>
