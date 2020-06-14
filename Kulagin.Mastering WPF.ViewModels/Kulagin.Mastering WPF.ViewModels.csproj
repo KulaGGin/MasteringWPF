@@ -52,6 +52,7 @@
     <Compile Include="BaseViewModel.cs" />
     <Compile Include="BitRateViewModel.cs" />
     <Compile Include="Business\BaseBusinessViewModel.cs" />
+    <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="Interfaces\IUserViewModel.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="MenuItemViewModel.cs" />
