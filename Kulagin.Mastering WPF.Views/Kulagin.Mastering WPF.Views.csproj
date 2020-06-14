@@ -60,6 +60,9 @@
     <Compile Include="BitRateView.xaml.cs">
       <DependentUpon>BitRateView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BoundlessTextBlockView.xaml.cs">
+      <DependentUpon>BoundlessTextBlockView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ButtonTemplateView.xaml.cs">
       <DependentUpon>ButtonTemplateView.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BitRateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BoundlessTextBlockView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
