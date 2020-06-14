@@ -12,7 +12,7 @@
              mc:Ignorable="d"
              TextElement.FontSize="14">
     <UserControl.Resources>
-        <ViewModels:UsersViewModel x:Key="UsersViewModel" />
+        <ViewModels:UserViewModel x:Key="UserViewModel" />
         <DataTemplateSelectors:UserAgeDataTemplateSelector x:Key="UserAgeDataTemplateSelector" />
         <Converters:StringToFirstLetterConverter x:Key="StringToFirstLetterConverter" />
         <CollectionViewSource x:Key="GroupedUsers" Source="{Binding MoreUsers}">
@@ -87,6 +87,10 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="20 45">
+            <TextBlock Text="Address Control" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,30" />
+            <ContentControl Content="{StaticResource UserViewModel}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="225" />
         </StackPanel>
     </Grid>
 </UserControl>
