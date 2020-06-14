@@ -3,36 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Kulagin.Mastering_WPF.DataModels;
 using Kulagin.Mastering_WPF.ViewModels.Business;
+using Kulagin.Mastering_WPF.ViewModels.Commands;
+using Kulagin.Mastering_WPF.ViewModels.Interfaces;
 
 
 namespace Kulagin.Mastering_WPF.ViewModels {
-    public class UserViewModel : BaseBusinessViewModel {
-        private User model;
-        private bool isSelected = false;
-        public UserViewModel(User model) {
-            Model = model;
+    /// <summary>
+    /// Provides a pre-populated User object to the UI to demonstrate the use of View Model location.
+    /// </summary>
+    public class UserViewModel : BaseViewModel, IUserViewModel {
+        private User user = new User(Guid.NewGuid(), "James Smith", 25) { Address = new Address() { HouseAndStreet = "147 Lucile Street", Town = "Somertown", City = "London", PostCode = "NW17 9RL", Country = "England" } };
+
+        /// <summary>
+        /// Gets or sets the User object to be used to demonstrate the use of View Model location with.
+        /// </summary>
+        public User User {
+            get { return user; }
+            set { user = value; NotifyPropertyChanged(); }
         }
-        public User Model {
-            get { return model; }
-            set { model = value; NotifyPropertyChanged(); }
+
+        /// <summary>
+        /// The fictional save command to demonstrate the use of commanding with.
+        /// </summary>
+        public ICommand SaveCommand {
+            get { return new ActionCommand(action => Save()); }
         }
-        public Guid Id {
-            get { return Model.Id; }
-            set { Model.Id = value; NotifyPropertyChanged(); }
-        }
-        public string Name {
-            get { return Model.Name; }
-            set { Model.Name = value; NotifyPropertyChanged(); }
-        }
-        public int Age {
-            get { return Model.Age; }
-            set { Model.Age = value; NotifyPropertyChanged(); }
-        }
-        public bool IsSelected {
-            get { return isSelected; }
-            set { isSelected = value; NotifyPropertyChanged(); }
+
+        private void Save() {
+            // Save User object
         }
     }
 }
