@@ -23,10 +23,6 @@ namespace Kulagin.Mastering_WPF {
             InitializeComponent();
         }
 
-        private void DisableButton_Click(object sender, RoutedEventArgs e) {
-            SaveButton.IsEnabled = false;
-        }
-
         #region Overrides of Window
 
         protected override void OnClosing(CancelEventArgs e) {
