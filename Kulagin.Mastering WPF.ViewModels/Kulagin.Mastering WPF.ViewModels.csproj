@@ -34,6 +34,8 @@
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -69,6 +71,10 @@
     <ProjectReference Include="..\Kulagin.Mastering WPF.Extensions\Kulagin.Mastering WPF.Extensions.csproj">
       <Project>{F26BC9CE-801D-4825-8A39-8FF2F2E7A236}</Project>
       <Name>Kulagin.Mastering WPF.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kulagin.Mastering WPF.Managers\Kulagin.Mastering WPF.Managers.csproj">
+      <Project>{c1ed9bd2-2973-4e14-b8ca-f12818374149}</Project>
+      <Name>Kulagin.Mastering WPF.Managers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
