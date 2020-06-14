@@ -9,7 +9,7 @@
         xmlns:Views="clr-namespace:Kulagin.Mastering_WPF.Views;assembly=Kulagin.MasteringWPF.Views"
         xmlns:Attached="clr-namespace:Kulagin.Mastering_WPF.Views.Attached;assembly=Kulagin.MasteringWPF.Views"
         mc:Ignorable="d"
-        Title="Mastering Windows Presentation Foundation" Width="1280" Height="960" ResizeMode="NoResize">
+        Title="Mastering Windows Presentation Foundation" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <ViewModels:MainWindowViewModel x:Key="MainWindowViewModel" />
         <ViewModels:MenuViewModel x:Key="MenuViewModel" />
@@ -18,21 +18,12 @@
         <ViewModels:AllUsersViewModel x:Key="AllUsersViewModel" />
         <ViewModels:AdornerViewModel x:Key="AdornerViewModel" />
         <ViewModels:MeterViewModel x:Key="MeterViewModel" />
+        <ViewModels:ForcedContainerItemsControlViewModel x:Key="ForcedContainerItemsControlViewModel" />
     </Window.Resources>
     <Grid DataContext="{StaticResource MainWindowViewModel}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <ContentControl Content="{StaticResource MenuViewModel}" />
-        <StackPanel Grid.Row="1" Margin="5">
-            <StackPanel Orientation="Horizontal">
-                <Button x:Name="SaveButton" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Save"
-                        Attached:ButtonProperties.DisabledToolTip="You must correct validation errors before saving"
-                        ToolTip="Saves the user" Margin="0,0,5,0" />
-                <Button x:Name="DisableButton" Content="Disable Other Button" HorizontalAlignment="Center"
-                        Click="DisableButton_Click" /></StackPanel>
-            <ContentControl Content="{StaticResource AllUsersViewModel}" />
-        </StackPanel>
+        <ContentControl Content="{StaticResource ForcedContainerItemsControlViewModel}" />
     </Grid>
 </Window>
