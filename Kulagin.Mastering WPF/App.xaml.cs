@@ -24,7 +24,7 @@ namespace Kulagin.Mastering_WPF {
         private void RegisterDependencies() {
             DependencyManager.Instance.ClearRegistrations();
             DependencyManager.Instance.Register<IDataProvider, MockDataProvider>();
-            DependencyManager.Instance.Register<IUserViewModel, UsersViewModel>();
+            DependencyManager.Instance.Register<IUserViewModel, UserViewModel>();
         }
     }
 }
