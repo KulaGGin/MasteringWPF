@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Kulagin.Mastering_WPF.Managers;
+using Kulagin.Mastering_WPF.ViewModels;
 using Kulagin.Mastering_WPF.ViewModels.Interfaces;
 
 
