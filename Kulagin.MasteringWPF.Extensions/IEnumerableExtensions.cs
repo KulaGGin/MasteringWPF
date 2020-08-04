@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,12 @@ namespace Kulagin.MasteringWPF.Extensions {
                     yield return element;
                 }
             }
+        }
+
+        public static int Count(this IEnumerable collection) {
+            int count = 0;
+            foreach(object item in collection) count++;
+            return count;
         }
     }
 }
