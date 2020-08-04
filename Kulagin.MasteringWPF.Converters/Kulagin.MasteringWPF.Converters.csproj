@@ -47,7 +47,14 @@
     <Compile Include="BaseVisibilityConverter.cs" />
     <Compile Include="BoolToVisibilityConverter.cs" />
     <Compile Include="EnumToVisibilityConverter.cs" />
+    <Compile Include="FeedbackTypeToImageSourceConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
+      <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
+      <Name>Kulagin.MasteringWPF.DataModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
