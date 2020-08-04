@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auditable.cs" />
     <Compile Include="BaseDataModel.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
     <Compile Include="Invoice.cs" />
