@@ -44,6 +44,7 @@
     <Compile Include="Auditable.cs" />
     <Compile Include="BaseDataModel.cs" />
     <Compile Include="BaseSynchronizableDataModel.cs" />
+    <Compile Include="Collections\BaseCollection.cs" />
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
@@ -59,5 +60,6 @@
       <Name>Kulagin.MasteringWPF.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
