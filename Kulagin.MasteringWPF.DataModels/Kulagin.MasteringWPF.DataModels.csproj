@@ -46,6 +46,7 @@
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
+    <Compile Include="Interfaces\ISynchronizableDataModel.cs" />
     <Compile Include="Invoice.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
