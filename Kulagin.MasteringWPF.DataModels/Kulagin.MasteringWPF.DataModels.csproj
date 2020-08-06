@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Auditable.cs" />
     <Compile Include="BaseDataModel.cs" />
+    <Compile Include="BaseSynchronizableDataModel.cs" />
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
