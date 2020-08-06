@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.Extens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.Views", "Kulagin.MasteringWPF.Views\Kulagin.MasteringWPF.Views.csproj", "{351E9F40-1DDD-4A40-8F7B-445BAB7BAF51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.Converters", "Kulagin.MasteringWPF.Converters\Kulagin.MasteringWPF.Converters.csproj", "{7A333040-F753-4AF7-9D7B-DB0BCB9D0444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{351E9F40-1DDD-4A40-8F7B-445BAB7BAF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{351E9F40-1DDD-4A40-8F7B-445BAB7BAF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{351E9F40-1DDD-4A40-8F7B-445BAB7BAF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A333040-F753-4AF7-9D7B-DB0BCB9D0444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A333040-F753-4AF7-9D7B-DB0BCB9D0444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A333040-F753-4AF7-9D7B-DB0BCB9D0444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A333040-F753-4AF7-9D7B-DB0BCB9D0444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
