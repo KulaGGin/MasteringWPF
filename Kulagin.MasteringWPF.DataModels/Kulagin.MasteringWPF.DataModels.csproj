@@ -53,6 +53,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Extensions\Kulagin.MasteringWPF.Extensions.csproj">
+      <Project>{3151a73e-aa0e-4f24-bec1-8ba0aab67083}</Project>
+      <Name>Kulagin.MasteringWPF.Extensions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
