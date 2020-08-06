@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF", "Kul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.ViewModels", "Kulagin.MasteringWPF.ViewModels\Kulagin.MasteringWPF.ViewModels.csproj", "{07988F8F-3A50-4ED6-B257-1207DE9453F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.DataModels", "Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj", "{9603D835-0916-4601-A4F1-0BCFC1163502}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{07988F8F-3A50-4ED6-B257-1207DE9453F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07988F8F-3A50-4ED6-B257-1207DE9453F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07988F8F-3A50-4ED6-B257-1207DE9453F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9603D835-0916-4601-A4F1-0BCFC1163502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9603D835-0916-4601-A4F1-0BCFC1163502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9603D835-0916-4601-A4F1-0BCFC1163502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9603D835-0916-4601-A4F1-0BCFC1163502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
