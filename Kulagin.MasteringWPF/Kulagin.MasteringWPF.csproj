@@ -107,6 +107,10 @@
       <Project>{6d0ffb00-d738-4d69-b0c7-bb884c3aa6d9}</Project>
       <Name>Kulagin.MasteringWPF.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.ViewModels\Kulagin.MasteringWPF.ViewModels.csproj">
+      <Project>{07988F8F-3A50-4ED6-B257-1207DE9453F7}</Project>
+      <Name>Kulagin.MasteringWPF.ViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test.Kulagin.MasteringWPF.Models\Test.Kulagin.MasteringWPF.Models.csproj">
       <Project>{58afd9bc-1c6b-438f-884d-7319d21c55ac}</Project>
       <Name>Test.Kulagin.MasteringWPF.Models</Name>
