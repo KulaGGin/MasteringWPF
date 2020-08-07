@@ -44,6 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
+      <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
+      <Name>Kulagin.MasteringWPF.DataModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kulagin.MasteringWPF.Models\Kulagin.MasteringWPF.Models.csproj">
       <Project>{6d0ffb00-d738-4d69-b0c7-bb884c3aa6d9}</Project>
       <Name>Kulagin.MasteringWPF.Models</Name>
