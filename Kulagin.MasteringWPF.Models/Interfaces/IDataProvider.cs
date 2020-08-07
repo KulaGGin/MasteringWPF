@@ -10,5 +10,6 @@ namespace Kulagin.MasteringWPF.Models.Interfaces {
     public interface IDataProvider {
         User GetUser(Guid id);
         bool SaveUser(User user);
+        bool AddUser(User user);
     }
 }
