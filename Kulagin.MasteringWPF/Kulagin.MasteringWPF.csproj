@@ -94,7 +94,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
+      <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
+      <Name>Kulagin.MasteringWPF.DataModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Managers\Kulagin.MasteringWPF.Managers.csproj">
+      <Project>{35b0db72-bca2-4eb1-bcbc-148df9572ba0}</Project>
+      <Name>Kulagin.MasteringWPF.Managers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Models\Kulagin.MasteringWPF.Models.csproj">
+      <Project>{6d0ffb00-d738-4d69-b0c7-bb884c3aa6d9}</Project>
+      <Name>Kulagin.MasteringWPF.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.Kulagin.MasteringWPF.Models\Test.Kulagin.MasteringWPF.Models.csproj">
+      <Project>{58afd9bc-1c6b-438f-884d-7319d21c55ac}</Project>
+      <Name>Test.Kulagin.MasteringWPF.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Error_16.png" />
     <Resource Include="Images\Information_16.png" />
