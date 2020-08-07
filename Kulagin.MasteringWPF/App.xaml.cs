@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using Kulagin.MasteringWPF.Managers;
 using Kulagin.MasteringWPF.Models.Interfaces;
+using Kulagin.MasteringWPF.ViewModels;
+using Kulagin.MasteringWPF.ViewModels.Interfaces;
 using Test.Kulagin.MasteringWPF.Models.DataProviders;
 
 
@@ -22,6 +24,7 @@ namespace Kulagin.MasteringWPF {
         private void RegisterDependencies() {
             DependencyManager.Instance.ClearRegistrations();
             DependencyManager.Instance.Register<IDataProvider, MockDataProvider>();
+            DependencyManager.Instance.Register<IUserViewModel, UserViewModel>();
             //DependencyManager.Instance.Register<IEmailManager, EmailManager>();
             //DependencyManager.Instance.Register<IExcelManager, ExcelManager>();
             //DependencyManager.Instance.Register<IWindowManager, WindowManager>();
