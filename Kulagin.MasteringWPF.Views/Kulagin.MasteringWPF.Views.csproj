@@ -54,8 +54,16 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Managers\Kulagin.MasteringWPF.Managers.csproj">
+      <Project>{35B0DB72-BCA2-4EB1-BCBC-148DF9572BA0}</Project>
+      <Name>Kulagin.MasteringWPF.Managers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.ViewModels\Kulagin.MasteringWPF.ViewModels.csproj">
+      <Project>{07988f8f-3a50-4ed6-b257-1207de9453f7}</Project>
+      <Name>Kulagin.MasteringWPF.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
     <Page Include="Controls\FolderPathEditField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
