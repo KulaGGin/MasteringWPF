@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IDataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
+      <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
+      <Name>Kulagin.MasteringWPF.DataModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
