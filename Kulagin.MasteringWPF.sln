@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Kulagin.MasteringWPF.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.Managers", "Kulagin.MasteringWPF.Managers\Kulagin.MasteringWPF.Managers.csproj", "{35B0DB72-BCA2-4EB1-BCBC-148DF9572BA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Kulagin.MasteringWPF.Mocks", "Test.Kulagin.MasteringWPF.Mocks\Test.Kulagin.MasteringWPF.Mocks.csproj", "{29E4A217-FAA0-4293-8908-99221FFC7193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{35B0DB72-BCA2-4EB1-BCBC-148DF9572BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35B0DB72-BCA2-4EB1-BCBC-148DF9572BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35B0DB72-BCA2-4EB1-BCBC-148DF9572BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E4A217-FAA0-4293-8908-99221FFC7193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E4A217-FAA0-4293-8908-99221FFC7193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E4A217-FAA0-4293-8908-99221FFC7193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E4A217-FAA0-4293-8908-99221FFC7193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
