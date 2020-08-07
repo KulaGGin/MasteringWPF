@@ -49,6 +49,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\AddressControl.xaml.cs">
+      <DependentUpon>AddressControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\FolderPathEditField.xaml.cs">
       <DependentUpon>FolderPathEditField.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
       <Name>Kulagin.MasteringWPF.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
+    <Page Include="Controls\AddressControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\FolderPathEditField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
