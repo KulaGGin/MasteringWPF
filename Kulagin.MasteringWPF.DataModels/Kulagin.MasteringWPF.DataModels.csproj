@@ -49,6 +49,7 @@
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
     <Compile Include="Enums\MessageBoxButtonSelection.cs" />
+    <Compile Include="Enums\MessageBoxIcon.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
     <Compile Include="Interfaces\ISynchronizableDataModel.cs" />
     <Compile Include="Invoice.cs" />
