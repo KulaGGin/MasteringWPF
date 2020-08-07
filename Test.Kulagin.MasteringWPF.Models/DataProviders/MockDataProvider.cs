@@ -15,5 +15,9 @@ namespace Test.Kulagin.MasteringWPF.Models.DataProviders {
         public bool SaveUser(User user) {
             return true;
         }
+
+        public bool AddUser(User user) {
+            return true;
+        }
     }
 }
