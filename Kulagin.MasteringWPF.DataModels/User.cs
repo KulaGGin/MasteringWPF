@@ -8,6 +8,8 @@ using Kulagin.MasteringWPF.DataModels.Interfaces;
 
 namespace Kulagin.MasteringWPF.DataModels {
     public class User : BaseSynchronizableDataModel<User>, IAuditable {
+        private Address address = new Address();
+        private Auditable auditable;
         private Guid id = Guid.Empty;
         private string name = string.Empty;
         private int age = 0;
@@ -35,7 +37,10 @@ namespace Kulagin.MasteringWPF.DataModels {
             set { age = value; NotifyPropertyChanged(); }
         }
 
-        private Auditable auditable;
+        public Address Address {
+            get { return address; }
+            set { address = value; NotifyPropertyChanged(); }
+        }
 
         public Auditable Auditable {
             get { return auditable; }
