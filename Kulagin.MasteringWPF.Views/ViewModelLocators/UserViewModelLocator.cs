@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Kulagin.MasteringWPF.ViewModels;
 using Kulagin.MasteringWPF.ViewModels.Interfaces;
+using Kulagin.MasteringWPF.ViewModels.Mocks;
 
 
 namespace Kulagin.MasteringWPF.Views.ViewModelLocators {
@@ -13,7 +14,7 @@ namespace Kulagin.MasteringWPF.Views.ViewModelLocators {
         /// Initializes a new UserViewModelLocator control with default values.
         /// </summary>
         public UserViewModelLocator() {
-            DesignTimeViewModel = new UserViewModel();
+            DesignTimeViewModel = new MockUserViewModel();
         }
     }
 }
