@@ -64,6 +64,10 @@
     <Compile Include="ViewModelLocators\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Converters\Kulagin.MasteringWPF.Converters.csproj">
+      <Project>{7a333040-f753-4af7-9d7b-db0bcb9d0444}</Project>
+      <Name>Kulagin.MasteringWPF.Converters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
       <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
       <Name>Kulagin.MasteringWPF.DataModels</Name>
