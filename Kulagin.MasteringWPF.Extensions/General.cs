@@ -21,5 +21,19 @@ namespace Kulagin.MasteringWPF.Extensions {
 
             return Enum.GetName(value.GetType(), value);
         }
+
+        /// <summary>
+        /// Returns a generic ICollection containing an item for each member of the type of enum specified by the generic T type parameter. This method will throw an ArgumentException if the provided generic T type parameter is not an enum.
+        /// </summary>
+        /// <typeparam name="T">The type of enum to fill the collection with.</typeparam>
+        /// <param name="collection">The this ICollection.</param>
+        /// <exception cref="ArgumentException" />
+        public static void FillWithMembers<T>(this ICollection<T> collection) {
+            if(typeof(T).BaseType != typeof(Enum)) throw new ArgumentException("The FillWithMembers<T> method can only be called with an enum as the generic type.");
+            collection.Clear();
+            foreach(string name in Enum.GetNames(typeof(T))) {
+                collection.Add((T)Enum.Parse(typeof(T), name));
+            }
+        }
     }
 }
