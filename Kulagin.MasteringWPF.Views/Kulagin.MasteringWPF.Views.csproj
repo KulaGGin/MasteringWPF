@@ -49,6 +49,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitRateView.xaml.cs">
+      <DependentUpon>BitRateView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\AddressControl.xaml.cs">
       <DependentUpon>AddressControl.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="BitRateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\AddressControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
