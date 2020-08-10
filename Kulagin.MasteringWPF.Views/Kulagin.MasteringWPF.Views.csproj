@@ -76,6 +76,10 @@
       <Project>{07988f8f-3a50-4ed6-b257-1207de9453f7}</Project>
       <Name>Kulagin.MasteringWPF.ViewModels</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Test.Kulagin.MasteringWPF.Mocks\Test.Kulagin.MasteringWPF.Mocks.csproj">
+      <Project>{29e4a217-faa0-4293-8908-99221ffc7193}</Project>
+      <Name>Test.Kulagin.MasteringWPF.Mocks</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="Controls\AddressControl.xaml">
