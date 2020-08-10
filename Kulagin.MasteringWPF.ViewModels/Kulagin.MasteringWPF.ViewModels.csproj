@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseViewModel.cs" />
+    <Compile Include="BitRateViewModel.cs" />
     <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="Interfaces\IUserViewModel.cs" />
     <Compile Include="Mocks\MockUserViewModel.cs" />
