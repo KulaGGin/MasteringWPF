@@ -2,8 +2,15 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Kulagin.MasteringWPF"
+             xmlns:DataModels="clr-namespace:Kulagin.MasteringWPF.DataModels;assembly=Kulagin.MasteringWPF.DataModels"
+             xmlns:Views="clr-namespace:Kulagin.MasteringWPF.Views;assembly=Kulagin.MasteringWPF.Views"
              Startup="App_Startup">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type DataModels:User}">
+            <StackPanel>
+                <TextBlock Text="{Binding Name}" />
+                <TextBlock Text="{Binding DataContext.UserCount, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Views:UserView}}}" />
+            </StackPanel>
+        </DataTemplate>
     </Application.Resources>
 </Application>
