@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Converters\Kulagin.MasteringWPF.Converters.csproj">
+      <Project>{7a333040-f753-4af7-9d7b-db0bcb9d0444}</Project>
+      <Name>Kulagin.MasteringWPF.Converters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
       <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
       <Name>Kulagin.MasteringWPF.DataModels</Name>
@@ -114,6 +118,10 @@
     <ProjectReference Include="..\Kulagin.MasteringWPF.Views\Kulagin.MasteringWPF.Views.csproj">
       <Project>{351e9f40-1ddd-4a40-8f7b-445bab7baf51}</Project>
       <Name>Kulagin.MasteringWPF.Views</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.Kulagin.MasteringWPF.Mocks\Test.Kulagin.MasteringWPF.Mocks.csproj">
+      <Project>{29e4a217-faa0-4293-8908-99221ffc7193}</Project>
+      <Name>Test.Kulagin.MasteringWPF.Mocks</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test.Kulagin.MasteringWPF.Models\Test.Kulagin.MasteringWPF.Models.csproj">
       <Project>{58afd9bc-1c6b-438f-884d-7319d21c55ac}</Project>
