@@ -48,6 +48,7 @@
     <Compile Include="BoolToVisibilityConverter.cs" />
     <Compile Include="EnumToBoolConverter.cs" />
     <Compile Include="EnumToDescriptionStringConverter.cs" />
+    <Compile Include="EnumToIntConverter.cs" />
     <Compile Include="EnumToVisibilityConverter.cs" />
     <Compile Include="FeedbackTypeToImageSourceConverter.cs" />
     <Compile Include="HigherLowerConverter.cs" />
