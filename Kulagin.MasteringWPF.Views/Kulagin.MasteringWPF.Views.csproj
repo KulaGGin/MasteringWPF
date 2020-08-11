@@ -65,6 +65,9 @@
     <Compile Include="ViewModelLocators\BaseViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\UserViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\ViewModelLocator.cs" />
+    <Compile Include="WeightMeasurementsView.xaml.cs">
+      <DependentUpon>WeightMeasurementsView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kulagin.MasteringWPF.Converters\Kulagin.MasteringWPF.Converters.csproj">
@@ -102,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WeightMeasurementsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
