@@ -16,5 +16,8 @@
         <DataTemplate DataType="{x:Type ViewModels:BitRateViewModel}">
             <Views:BitRateView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:WeightMeasurementsViewModel}">
+            <Views:WeightMeasurementsView />
+        </DataTemplate>
     </Application.Resources>
 </Application>
