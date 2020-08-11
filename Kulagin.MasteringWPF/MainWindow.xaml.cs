@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Kulagin.MasteringWPF.ViewModels;
+
 
 namespace Kulagin.MasteringWPF {
     /// <summary>
@@ -20,6 +22,16 @@ namespace Kulagin.MasteringWPF {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+            Loaded += MainWindow_Loaded;
+            Closed += MainWindow_Closed;
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e) {
+            MainWindowViewModel viewModel = new MainWindowViewModel();
+            DataContext = viewModel;
+        }
+
+        private void MainWindow_Closed(object sender, EventArgs e) {
         }
     }
 }
