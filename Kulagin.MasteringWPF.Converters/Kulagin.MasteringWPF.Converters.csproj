@@ -50,6 +50,7 @@
     <Compile Include="EnumToDescriptionStringConverter.cs" />
     <Compile Include="EnumToVisibilityConverter.cs" />
     <Compile Include="FeedbackTypeToImageSourceConverter.cs" />
+    <Compile Include="HigherLowerConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
