@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:Kulagin.MasteringWPF"
              xmlns:DataModels="clr-namespace:Kulagin.MasteringWPF.DataModels;assembly=Kulagin.MasteringWPF.DataModels"
              xmlns:Views="clr-namespace:Kulagin.MasteringWPF.Views;assembly=Kulagin.MasteringWPF.Views"
+             xmlns:ViewModels="clr-namespace:Kulagin.MasteringWPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
              Startup="App_Startup">
     <Application.Resources>
         <DataTemplate DataType="{x:Type DataModels:User}">
@@ -11,6 +12,9 @@
                 <TextBlock Text="{Binding Name}" />
                 <TextBlock Text="{Binding DataContext.UserCount, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Views:UserView}}}" />
             </StackPanel>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:BitRateViewModel}">
+            <Views:BitRateView />
         </DataTemplate>
     </Application.Resources>
 </Application>
