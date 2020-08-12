@@ -43,6 +43,12 @@
                 </ScrollViewer>
             </Border>
         </ControlTemplate>
+        <Style x:Key="DemonstrationLabel" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+        </Style>
 
 
         <!--Colors-->
