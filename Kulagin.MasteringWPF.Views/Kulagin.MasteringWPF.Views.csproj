@@ -61,6 +61,7 @@
     <Compile Include="Controls\FolderPathEditField.xaml.cs">
       <DependentUpon>FolderPathEditField.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataTemplateSelectors\UserAgeDataTemplateSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
@@ -120,5 +121,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
