@@ -7,9 +7,13 @@
              xmlns:Converters="clr-namespace:Kulagin.MasteringWPF.Converters;assembly=Kulagin.MasteringWPF.Converters"
              xmlns:DataModels="clr-namespace:Kulagin.MasteringWPF.DataModels;assembly=Kulagin.MasteringWPF.DataModels"
              xmlns:ViewModels="clr-namespace:Kulagin.MasteringWPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
+             xmlns:DataTemplateSelectors="clr-namespace:Kulagin.MasteringWPF.Views.DataTemplateSelectors"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              TextElement.FontSize="14">
+    <UserControl.Resources>
+        <DataTemplateSelectors:UserAgeDataTemplateSelector x:Key="UserAgeDataTemplateSelector" />
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -27,6 +31,10 @@
         <StackPanel Grid.Row="0" Grid.Column="1" Margin="75 15">
             <TextBlock Text="Data Templates" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,30" />
             <ItemsControl ItemsSource="{Binding Users}" ItemTemplate="{StaticResource UserTemplate}" Width="170" />
+        </StackPanel>     
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="75 15">
+            <TextBlock Text="Data Templates" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,30" />
+            <ItemsControl ItemsSource="{Binding Users}" Padding="10" ItemTemplateSelector="{StaticResource UserAgeDataTemplateSelector}" />
         </StackPanel>
     </Grid>
 </UserControl>
