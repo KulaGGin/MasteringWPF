@@ -24,5 +24,9 @@
             <TextBlock Text="ToString()" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,50" />
             <ItemsControl ItemsSource="{Binding Users}" Width="100" />
         </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="75 15">
+            <TextBlock Text="Data Templates" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,30" />
+            <ItemsControl ItemsSource="{Binding Users}" ItemTemplate="{StaticResource UserTemplate}" Width="170" />
+        </StackPanel>
     </Grid>
 </UserControl>
