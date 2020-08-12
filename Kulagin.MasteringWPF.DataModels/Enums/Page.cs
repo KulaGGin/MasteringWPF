@@ -22,5 +22,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Weight Measurement")]
         WeightMeasurements,
+
+        /// <summary>
+        /// Represents the User page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("User")]
+        User,
     }
 }
