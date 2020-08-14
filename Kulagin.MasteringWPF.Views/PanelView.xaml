@@ -89,5 +89,40 @@
                 </StackPanel>
             </Border>
         </StackPanel>
+        <StackPanel Grid.Row="1" Margin="20">
+            <TextBlock Text="Uniform Grid" Style="{StaticResource DemonstrationLabel}" />
+            <StackPanel TextElement.FontSize="14" Background="White">
+                <UniformGrid Columns="7" Rows="1">
+                    <UniformGrid.Resources>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Height" Value="35" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="Padding" Value="0,5,0,0" />
+                        </Style>
+                    </UniformGrid.Resources>
+                    <TextBlock Text="Mon" />
+                    <TextBlock Text="Tue" />
+                    <TextBlock Text="Wed" />
+                    <TextBlock Text="Thu" />
+                    <TextBlock Text="Fri" />
+                    <TextBlock Text="Sat" />
+                    <TextBlock Text="Sun" />
+                </UniformGrid>
+                <ItemsControl ItemsSource="{Binding Days}" Background="Black" Padding="0,0,1,1">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="7" FirstColumn="2" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="Black" BorderThickness="1,1,0,0" Background="White">
+                                <TextBlock Text="{Binding}" Height="35" HorizontalAlignment="Center" Padding="0,7.5,0,0" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </UserControl>
