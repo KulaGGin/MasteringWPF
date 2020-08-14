@@ -62,6 +62,9 @@
       <DependentUpon>FolderPathEditField.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataTemplateSelectors\UserAgeDataTemplateSelector.cs" />
+    <Compile Include="DialogControlView.xaml.cs">
+      <DependentUpon>DialogControlView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\FolderPathEditField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogControlView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
