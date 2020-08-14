@@ -65,5 +65,29 @@
                 </Border>
             </DockPanel>
         </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="20">
+            <TextBlock Text="Stack Panel" Style="{StaticResource DemonstrationLabel}" />
+            <Border Background="Black" Padding="5">
+                <Border.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="Background" Value="Yellow" />
+                        <Setter Property="TextAlignment" Value="Center" />
+                    </Style>
+                </Border.Resources>
+                <StackPanel TextElement.FontSize="14">
+                    <TextBlock Text="Stretched Horizontally" />
+                    <TextBlock Text="With Margin" Margin="20" />
+                    <TextBlock Text="Centered Horizontally" HorizontalAlignment="Center" />
+                    <Border BorderBrush="Cyan" BorderThickness="1" Margin="0,5,0,0" Padding="5" SnapsToDevicePixels="True">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Stretched Vertically" />
+                            <TextBlock Text="With Margin" Margin="20" />
+                            <TextBlock Text="Centered Vertically" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </StackPanel>
     </Grid>
 </UserControl>
