@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
              mc:Ignorable="d" >
-    <Grid TextElement.FontSize="14" Width="300" Margin="10">
+    <Grid TextElement.FontSize="14" Width="300" Margin="10" ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2.5*" />
             <ColumnDefinition />
