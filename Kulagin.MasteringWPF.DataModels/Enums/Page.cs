@@ -28,5 +28,23 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("User")]
         User,
+
+        /// <summary>
+        /// Represents the Panel page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Panel")]
+        Panel,
+
+        /// <summary>
+        /// Represents the Adorner page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Adorner")]
+        Adorner,
+
+        /// <summary>
+        /// Represents the Meter page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Meter")]
+        Meter,
     }
 }
