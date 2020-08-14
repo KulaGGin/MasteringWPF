@@ -58,6 +58,7 @@ namespace Kulagin.MasteringWPF.ViewModels {
             pages.Add(new PageModel(typeof(BitRateViewModel), Page.BitRate, Chapter.Four));
             pages.Add(new PageModel(typeof(WeightMeasurementsViewModel), Page.WeightMeasurements, Chapter.Four));
             pages.Add(new PageModel(typeof(AllUsersViewModel), Page.User, Chapter.Four));
+            pages.Add(new PageModel(typeof(PanelViewModel), Page.Panel, Chapter.Five));
         }
     }
 }
