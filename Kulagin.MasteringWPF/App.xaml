@@ -26,6 +26,9 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type ViewModels:AllUsersViewModel}">
             <Views:AllUsersView />
+        </DataTemplate>       
+        <DataTemplate DataType="{x:Type ViewModels:PanelViewModel}">
+            <Views:PanelView />
         </DataTemplate>
 
 
