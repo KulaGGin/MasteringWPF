@@ -18,6 +18,7 @@
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -35,6 +36,43 @@
         <StackPanel Grid.Row="0" Grid.Column="2" Margin="75 15">
             <TextBlock Text="Data Templates" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,30" />
             <ItemsControl ItemsSource="{Binding Users}" Padding="10" ItemTemplateSelector="{StaticResource UserAgeDataTemplateSelector}" />
+        </StackPanel>
+        <StackPanel Margin="20" Grid.Row="2">
+            <TextBlock Text="SharedSizeGroup example view" Style="{StaticResource DemonstrationLabel}" />
+            <Grid TextElement.FontSize="14" Margin="10" IsSharedSizeScope="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid TextElement.FontWeight="SemiBold" Margin="0,0,0,3" ShowGridLines="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" SharedSizeGroup="Name" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="Auto" SharedSizeGroup="Age" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Name" />
+                    <TextBlock Grid.Column="1" Text="Comments" Margin="10,0" />
+                    <TextBlock Grid.Column="2" Text="Age" />
+                </Grid>
+                <Separator Grid.Row="1" />
+                <ItemsControl Grid.Row="2" ItemsSource="{Binding Users}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="{x:Type DataModels:User}">
+                            <Grid ShowGridLines="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" SharedSizeGroup="Name" />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" SharedSizeGroup="Age" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock Grid.Column="1" Text="Star-sized column takes all remaining space" Margin="10,0" />
+                                <TextBlock Grid.Column="2" Text="{Binding Age}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
         </StackPanel>
     </Grid>
 </UserControl>
