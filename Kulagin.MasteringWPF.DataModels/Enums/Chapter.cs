@@ -8,17 +8,30 @@ using System.Threading.Tasks;
 namespace Kulagin.MasteringWPF.DataModels.Enums {
     /// Represents a chapter in the related Mastering Windows Presentation Foundation book.
     public enum Chapter {
-        /// Represents chapter 1 in the related Mastering Windows Presentation Foundation demonstration application.
+        /// <summary>
+        /// Represents a chapter in the related Mastering Windows Presentaion Foundation book.
+        /// </summary>
         [Description("A Smarter Way of Working with WPF")]
         One = 1,
-        /// Represents chapter 2 in the related Mastering Windows Presentation Foundation demonstration application.
+        /// <summary>
+        /// Represents chapter 2 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
         [Description("Debugging WPF Applications")]
         Two = 2,
-        /// Represents chapter 3 in the related Mastering Windows Presentation Foundation demonstration application.
+        /// <summary>
+        /// Represents chapter 3 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
         [Description("Writing Custom Application Frameworks")]
         Three = 3,
-        /// Represents chapter 4 in the related Mastering Windows Presentation Foundation demonstration application.
+        /// <summary>
+        /// Represents chapter 4 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
         [Description("Becoming Proficient with Data Binding")]
         Four = 4,
+        /// <summary>
+        /// Represents chapter 5 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Using the Right Controls for the Job")]
+        Five = 5,
     }
 }
