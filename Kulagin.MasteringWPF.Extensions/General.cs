@@ -35,5 +35,15 @@ namespace Kulagin.MasteringWPF.Extensions {
                 collection.Add((T)Enum.Parse(typeof(T), name));
             }
         }
+
+        /// <summary>
+        /// Adds the items from the collection specified by the range input parameter into this collection.
+        /// </summary>
+        /// <typeparam name="T">The type of items inside the collections.</typeparam>
+        /// <param name="collection">This collection.</param>
+        /// <param name="range">The collection containing the items to add to this collection.</param>
+        public static void AddRange<T>(this ICollection<T> collection, ICollection<T> range) {
+            foreach(T item in range) collection.Add(item);
+        }
     }
 }
