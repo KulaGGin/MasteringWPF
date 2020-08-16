@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
+             xmlns:Panels="clr-namespace:Kulagin.MasteringWPF.Views.Panels.CompanyName.ApplicationName.Views.Panels"
              mc:Ignorable="d" 
              Width="1000" Height="650">
     <Grid>
@@ -144,6 +145,16 @@
                 <Button Content="0" Width="100" />
                 <Button Content="." />
             </WrapPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="20">
+            <TextBlock Text="Circumference Panel" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,20" />
+            <ItemsControl ItemsSource="{Binding Hours}" Width="200" Height="200" TextElement.FontSize="25">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Panels:CircumferencePanel Padding="15" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
         </StackPanel>
     </Grid>
 </UserControl>
