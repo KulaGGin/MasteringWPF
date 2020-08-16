@@ -23,6 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kulagin.MasteringWPF.Manage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Kulagin.MasteringWPF.Mocks", "Test.Kulagin.MasteringWPF.Mocks\Test.Kulagin.MasteringWPF.Mocks.csproj", "{29E4A217-FAA0-4293-8908-99221FFC7193}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F266B62-3BC3-4AAE-B98E-67F02EE34414}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
