@@ -50,6 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adorners\ResizeAdorner.cs" />
+    <Compile Include="AdornerView.xaml.cs">
+      <DependentUpon>AdornerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AllUsersView.xaml.cs">
       <DependentUpon>AllUsersView.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="AdornerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AllUsersView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
