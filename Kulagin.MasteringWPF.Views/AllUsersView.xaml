@@ -8,11 +8,21 @@
              xmlns:DataModels="clr-namespace:Kulagin.MasteringWPF.DataModels;assembly=Kulagin.MasteringWPF.DataModels"
              xmlns:ViewModels="clr-namespace:Kulagin.MasteringWPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
              xmlns:DataTemplateSelectors="clr-namespace:Kulagin.MasteringWPF.Views.DataTemplateSelectors"
+             xmlns:ComponentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              TextElement.FontSize="14">
     <UserControl.Resources>
         <DataTemplateSelectors:UserAgeDataTemplateSelector x:Key="UserAgeDataTemplateSelector" />
+        <Converters:StringToFirstLetterConverter x:Key="StringToFirstLetterConverter" />
+        <CollectionViewSource x:Key="GroupedUsers" Source="{Binding MoreUsers}">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="Name" Converter="{StaticResource StringToFirstLetterConverter}" />
+            </CollectionViewSource.GroupDescriptions>
+            <CollectionViewSource.SortDescriptions>
+                <ComponentModel:SortDescription PropertyName="Name" />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -96,6 +106,27 @@
                     </Style>
                 </ListBox.ItemContainerStyle>
             </ListBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            <TextBlock Text="StringToFirstLetterConverter" Style="{StaticResource DemonstrationLabel}" />
+            <ItemsControl ItemsSource="{Binding Source={StaticResource GroupedUsers}}" Background="White" FontSize="14">
+                <ItemsControl.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name, Converter={StaticResource StringToFirstLetterConverter}}"
+                                           Background="Black" Foreground="White" FontWeight="Bold"
+                                           Padding="5,4" />
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ItemsControl.GroupStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="{x:Type DataModels:User}">
+                        <TextBlock Text="{Binding Name}" Foreground="Black" Padding="0,2" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </StackPanel>
     </Grid>
 </UserControl>
