@@ -10,6 +10,12 @@ namespace Kulagin.MasteringWPF.ViewModels {
     /// </summary>
     public class PanelViewModel : BitRateViewModel {
         private List<int> days = Enumerable.Range(1, 31).ToList();
+        private List<int> hours = Enumerable.Range(1, 12).ToList();
+
+        public List<int> Hours {
+            get { return hours; }
+            set { hours = value; NotifyPropertyChanged(); }
+        }
 
         /// <summary>
         /// Gets or sets the collection of day numerals, to be displayed in the Uniform Grid example in the View.
