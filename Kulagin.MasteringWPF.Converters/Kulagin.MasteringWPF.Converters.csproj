@@ -53,6 +53,7 @@
     <Compile Include="FeedbackTypeToImageSourceConverter.cs" />
     <Compile Include="HigherLowerConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringToFirstLetterConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kulagin.MasteringWPF.DataModels\Kulagin.MasteringWPF.DataModels.csproj">
