@@ -30,6 +30,9 @@
         <DataTemplate DataType="{x:Type ViewModels:PanelViewModel}">
             <Views:PanelView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:AdornerViewModel}">
+            <Views:AdornerView />
+        </DataTemplate>
 
 
         <DataTemplate x:Key="UserTemplate" DataType="{x:Type DataModels:User}">
