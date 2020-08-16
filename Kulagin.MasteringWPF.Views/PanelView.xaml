@@ -125,7 +125,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="20">
-            <TextBlock Text="Wrap Panel" Style="{StaticResource DemonstrationLbael}" Margin="0,0,0,20" />
+            <TextBlock Text="Wrap Panel" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,20" />
             <WrapPanel ItemHeight="50" Width="150" TextElement.FontSize="14">
                 <WrapPanel.Resources>
                     <Style TargetType="{x:Type Button}">
