@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdornerViewModel.cs" />
     <Compile Include="AllUsersViewModel.cs" />
     <Compile Include="BaseViewModel.cs" />
     <Compile Include="BitRateViewModel.cs" />
