@@ -57,6 +57,7 @@
     <Compile Include="AllUsersView.xaml.cs">
       <DependentUpon>AllUsersView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Attached\ButtonProperties.cs" />
     <Compile Include="BitRateView.xaml.cs">
       <DependentUpon>BitRateView.xaml</DependentUpon>
     </Compile>
