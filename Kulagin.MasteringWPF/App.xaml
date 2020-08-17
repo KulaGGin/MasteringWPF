@@ -32,6 +32,9 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type ViewModels:AdornerViewModel}">
             <Views:AdornerView />
+        </DataTemplate> 
+        <DataTemplate DataType="{x:Type ViewModels:ButtonViewModel}">
+            <Views:ButtonView />
         </DataTemplate>
 
 
