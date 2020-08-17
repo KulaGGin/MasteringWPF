@@ -46,5 +46,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Meter")]
         Meter,
+
+        /// <summary>
+        /// Represents the Button page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Button")]
+        Button,
     }
 }
