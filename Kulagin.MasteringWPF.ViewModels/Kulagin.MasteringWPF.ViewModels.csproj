@@ -52,6 +52,7 @@
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="MenuItemViewModel.cs" />
     <Compile Include="MenuViewModel.cs" />
+    <Compile Include="MeterViewModel.cs" />
     <Compile Include="Mocks\MockUserViewModel.cs" />
     <Compile Include="PanelViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
