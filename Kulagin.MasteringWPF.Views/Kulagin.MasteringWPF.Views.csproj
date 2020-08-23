@@ -84,8 +84,8 @@
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\CircumferencePanel.cs" />
-    <Compile Include="PanelView.xaml.cs">
-      <DependentUpon>PanelView.xaml</DependentUpon>
+    <Compile Include="RightControlsView.xaml.cs">
+      <DependentUpon>RightControlsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserView.xaml.cs">
@@ -165,7 +165,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PanelView.xaml">
+    <Page Include="RightControlsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

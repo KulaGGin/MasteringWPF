@@ -27,8 +27,8 @@
         <DataTemplate DataType="{x:Type ViewModels:AllUsersViewModel}">
             <Views:AllUsersView />
         </DataTemplate>       
-        <DataTemplate DataType="{x:Type ViewModels:PanelViewModel}">
-            <Views:PanelView />
+        <DataTemplate DataType="{x:Type ViewModels:RightControlsViewModel}">
+            <Views:RightControlsView />
         </DataTemplate>
         <DataTemplate DataType="{x:Type ViewModels:AdornerViewModel}">
             <Views:AdornerView />

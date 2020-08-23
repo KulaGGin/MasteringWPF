@@ -17,8 +17,8 @@ namespace Kulagin.MasteringWPF.Views {
     /// <summary>
     /// Interaction logic for PanelView.xaml
     /// </summary>
-    public partial class PanelView : UserControl {
-        public PanelView() {
+    public partial class RightControlsView : UserControl {
+        public RightControlsView() {
             InitializeComponent();
         }
     }

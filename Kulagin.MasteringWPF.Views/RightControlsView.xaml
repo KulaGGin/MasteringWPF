@@ -1,24 +1,29 @@
-﻿<UserControl x:Class="Kulagin.MasteringWPF.Views.PanelView"
+﻿<UserControl x:Class="Kulagin.MasteringWPF.Views.RightControlsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
              xmlns:Panels="clr-namespace:Kulagin.MasteringWPF.Views.Panels.CompanyName.ApplicationName.Views.Panels"
-             mc:Ignorable="d" 
-             Width="1000" Height="650">
+             xmlns:ViewModels="clr-namespace:Kulagin.MasteringWPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ViewModels:AdornerViewModel x:Key="AdornerViewModel" />
+        <ViewModels:MeterViewModel x:Key="MeterViewModel" />
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Margin="20">
-            <TextBlock Text="Canvas" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,75" />
+        <StackPanel >
+            <TextBlock Text="Canvas" Style="{StaticResource DemonstrationLabel}" />
             <Canvas Width="256" Height="109" Background="Black">
                 <Canvas.Resources>
                     <Style TargetType="{x:Type Ellipse}">
@@ -38,8 +43,8 @@
                 <Ellipse Canvas.Top="29.5" Canvas.Left="103" Fill="Yellow" />
             </Canvas>
         </StackPanel>
-        <StackPanel Grid.Row="0" Grid.Column="1" Margin="20">
-            <TextBlock Text="Dock Panel" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,40" />
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="Dock Panel" Style="{StaticResource DemonstrationLabel}"/>
             <DockPanel Width="290" Height="180">
                 <DockPanel.Resources>
                     <Style TargetType="{x:Type TextBlock}">
@@ -66,7 +71,7 @@
                 </Border>
             </DockPanel>
         </StackPanel>
-        <StackPanel Grid.Row="0" Grid.Column="2" Margin="20">
+        <StackPanel Grid.Row="0" Grid.Column="2">
             <TextBlock Text="Stack Panel" Style="{StaticResource DemonstrationLabel}" />
             <Border Background="Black" Padding="5">
                 <Border.Resources>
@@ -90,7 +95,7 @@
                 </StackPanel>
             </Border>
         </StackPanel>
-        <StackPanel Grid.Row="1" Margin="20">
+        <StackPanel Grid.Row="1">
             <TextBlock Text="Uniform Grid" Style="{StaticResource DemonstrationLabel}" />
             <StackPanel TextElement.FontSize="14" Background="White">
                 <UniformGrid Columns="7" Rows="1">
@@ -125,8 +130,8 @@
                 </ItemsControl>
             </StackPanel>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1" Margin="20">
-            <TextBlock Text="Wrap Panel" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,20" />
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            <TextBlock Text="Wrap Panel" Style="{StaticResource DemonstrationLabel}" />
             <WrapPanel ItemHeight="50" Width="150" TextElement.FontSize="14">
                 <WrapPanel.Resources>
                     <Style TargetType="{x:Type Button}">
@@ -146,8 +151,8 @@
                 <Button Content="." />
             </WrapPanel>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="2" Margin="20">
-            <TextBlock Text="Circumference Panel" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,20" />
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="Circumference Panel" Style="{StaticResource DemonstrationLabel}" />
             <ItemsControl ItemsSource="{Binding Hours}" Width="200" Height="200" TextElement.FontSize="25">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -155,6 +160,14 @@
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <TextBlock Text="Adorners" Style="{StaticResource DemonstrationLabel}"/>
+            <ContentControl Content="{StaticResource AdornerViewModel}" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="Meter View" Style="{StaticResource DemonstrationLabel}" />
+            <ContentControl Content="{StaticResource MeterViewModel}" />
         </StackPanel>
     </Grid>
 </UserControl>

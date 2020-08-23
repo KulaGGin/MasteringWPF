@@ -30,10 +30,10 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         User,
 
         /// <summary>
-        /// Represents the Panel page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// Represents the Right Controls page in the related Mastering Windows Presentaion Foundation demonstration application.
         /// </summary>
-        [Description("Panel")]
-        Panel,
+        [Description("Right Controls")]
+        RightControls,
 
         /// <summary>
         /// Represents the Adorner page in the related Mastering Windows Presentaion Foundation demonstration application.
