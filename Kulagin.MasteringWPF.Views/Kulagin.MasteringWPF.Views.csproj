@@ -61,6 +61,9 @@
     <Compile Include="BitRateView.xaml.cs">
       <DependentUpon>BitRateView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BuiltInControlsView.xaml.cs">
+      <DependentUpon>BuiltInControlsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MeterView.xaml.cs">
       <DependentUpon>MeterView.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BitRateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuiltInControlsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
