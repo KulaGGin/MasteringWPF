@@ -42,6 +42,9 @@
         <DataTemplate DataType="{x:Type ViewModels:MeterViewModel}">
             <Views:MeterView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:BuiltInControlsViewModel}">
+            <Views:BuiltInControlsView />
+        </DataTemplate>
 
 
         <DataTemplate x:Key="UserTemplate" DataType="{x:Type DataModels:User}">
