@@ -33,7 +33,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Using the Right Controls for the Job")]
         Five = 5,
-
+        /// <summary>
+        /// Represents chapter 6 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Adapting the Built-in Controls")]
+        Six = 6,
         /// <summary>
         /// Represents chapter 8 in the related Mastering Windows Presentaion Foundation demonstration application.
         /// </summary>
