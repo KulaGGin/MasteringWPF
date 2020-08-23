@@ -64,6 +64,9 @@
     <Compile Include="BuiltInControlsView.xaml.cs">
       <DependentUpon>BuiltInControlsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\BoundlessTextBlock.xaml.cs">
+      <DependentUpon>BoundlessTextBlock.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MeterView.xaml.cs">
       <DependentUpon>MeterView.xaml</DependentUpon>
     </Compile>
@@ -138,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BuiltInControlsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BoundlessTextBlock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
