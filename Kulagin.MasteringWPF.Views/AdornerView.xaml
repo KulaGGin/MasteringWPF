@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
              mc:Ignorable="d">
     <Canvas Name="Canvas" Width="400" Height="200">
-        <Rectangle Canvas.Top="50" Canvas.Left="50" Fill="Lime" Stroke="Black" StrokeThickness="3" Width="150" Height="50" />
-        <Rectangle Canvas.Top="25" Canvas.Left="250" Fill="Yellow" Stroke="Black" StrokeThickness="3" Width="100" Height="150" />
+        <Rectangle Canvas.Top="0" Canvas.Left="18" Fill="Lime" Stroke="Black" StrokeThickness="3" Width="109" Height="50" />
+        <Rectangle Canvas.Top="0" Canvas.Left="162" Fill="Yellow" Stroke="Black" StrokeThickness="3" Width="100" Height="150" />
     </Canvas>
 </UserControl>
