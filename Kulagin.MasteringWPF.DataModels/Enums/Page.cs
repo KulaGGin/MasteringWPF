@@ -52,5 +52,13 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Button")]
         Button,
+
+        /// <summary>
+        /// Represents the BuiltInControls page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Built-in Controls")]
+        BuiltInControls,
+
+
     }
 }
