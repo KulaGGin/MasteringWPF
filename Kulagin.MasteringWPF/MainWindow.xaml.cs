@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,5 +34,20 @@ namespace Kulagin.MasteringWPF {
 
         private void MainWindow_Closed(object sender, EventArgs e) {
         }
+
+        #region Overrides of Window
+
+        protected override void OnClosing(CancelEventArgs e) {
+            base.OnClosing(e);
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to close ? ",
+                                                      "Close Confirmation",
+                                                      MessageBoxButton.OKCancel,
+                                                      MessageBoxImage.Question);
+            e.Cancel = result == MessageBoxResult.Cancel;
+        }
+    }
+
+        #endregion
+
     }
 }
