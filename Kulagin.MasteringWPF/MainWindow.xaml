@@ -7,7 +7,7 @@
         xmlns:ViewModels="clr-namespace:Kulagin.MasteringWPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
         xmlns:Converters="clr-namespace:Kulagin.MasteringWPF.Converters;assembly=Kulagin.MasteringWPF.Converters"
         mc:Ignorable="d"
-        Title="Mastering Windows Presentation Foundation - Kulagin Sergei" Width="1250" Height="762" Background="{StaticResource PacktBlack}" ResizeMode="NoResize"
+        Title="Mastering Windows Presentation Foundation - Kulagin Sergei" Width="1320" Height="762" Background="{StaticResource PacktBlack}" ResizeMode="NoResize"
         d:DataContext="{d:DesignInstance ViewModels:MainWindowViewModel, IsDesignTimeCreatable=True}">
     <Window.Resources>
         <Converters:EnumToIntConverter x:Key="EnumToIntConverter" />

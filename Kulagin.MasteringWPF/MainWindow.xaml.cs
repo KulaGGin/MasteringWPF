@@ -45,9 +45,7 @@ namespace Kulagin.MasteringWPF {
                                                       MessageBoxImage.Question);
             e.Cancel = result == MessageBoxResult.Cancel;
         }
-    }
 
         #endregion
-
     }
 }
