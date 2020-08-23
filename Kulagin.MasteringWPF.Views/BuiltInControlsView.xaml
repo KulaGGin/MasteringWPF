@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
+             xmlns:Controls="clr-namespace:Kulagin.MasteringWPF.Views.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -15,7 +16,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0">
             <TextBlock Text="Bullet" Style="{StaticResource DemonstrationLabel}" />
             <Rectangle Fill="Salmon" Width="150" Height="100" RadiusX="25"
                        RadiusY="50">
@@ -23,6 +24,14 @@
                     <EllipseGeometry Center="150,50" RadiusX="150" RadiusY="50" />
                 </Rectangle.Clip>
             </Rectangle>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="Boundless Textblock" Style="{StaticResource DemonstrationLabel}" />
+            <Border BorderBrush="Black" BorderThickness="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" SnapsToDevicePixels="True">
+                <Controls:BoundlessTextBlock Text="Can you see what has happened?" Background="Aqua" FontSize="14" Width="150" Height="22" />
+            </Border>
         </StackPanel>
     </Grid>
 </UserControl>
