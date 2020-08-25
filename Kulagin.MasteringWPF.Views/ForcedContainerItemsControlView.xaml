@@ -16,6 +16,9 @@
                 <Setter Property="RadiusX" Value="15" />
                 <Setter Property="RadiusY" Value="15" />
             </Style>
+            <DataTemplate x:Key="EllipseDataTemplate" DataType="{x:Type UIElement}">
+                <Ellipse Width="16" Height="16" Stroke="Gray" StrokeThickness="2" Margin="4" />
+            </DataTemplate>
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -26,5 +29,9 @@
             <Rectangle Fill="Orange" />
             <Rectangle Fill="Green" />
         </ListBox>
+        <ItemsControl Grid.Row="1" ItemsSource="{Binding Items, ElementName=ListBox}"
+                      ItemsPanel="{StaticResource HorizontalPanelTemplate}"
+                      ItemTemplate="{StaticResource EllipseDataTemplate}"
+                      HorizontalAlignment="Center" />
     </Grid>
 </UserControl>
