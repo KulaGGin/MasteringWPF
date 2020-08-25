@@ -73,6 +73,9 @@
     <Compile Include="Controls\Spreadsheet.xaml.cs">
       <DependentUpon>Spreadsheet.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SpreadsheetView.xaml.cs">
+      <DependentUpon>SpreadsheetView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ForcedContainerItemsControlView\ForcedContainerItemsControlView.xaml.cs">
       <DependentUpon>ForcedContainerItemsControlView.xaml</DependentUpon>
     </Compile>
@@ -162,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Spreadsheet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpreadsheetView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
