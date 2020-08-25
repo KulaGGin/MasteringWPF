@@ -33,5 +33,9 @@
                 <Controls:BoundlessTextBlock Text="Can you see what has happened?" Background="Aqua" FontSize="14" Width="150" Height="22" />
             </Border>
         </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="Forced Container Example" Style="{StaticResource DemonstrationLabel}" />
+            <local:ForcedContainerItemsControlView HorizontalAlignment="Center" />
+        </StackPanel>
     </Grid>
 </UserControl>
