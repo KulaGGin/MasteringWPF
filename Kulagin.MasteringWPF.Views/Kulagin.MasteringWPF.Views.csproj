@@ -67,6 +67,7 @@
     <Compile Include="Controls\BoundlessTextBlock.xaml.cs">
       <DependentUpon>BoundlessTextBlock.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DataGridBoundTemplateColumn.cs" />
     <Compile Include="Controls\ForcedContainerItemsControl.xaml.cs">
       <DependentUpon>ForcedContainerItemsControl.xaml</DependentUpon>
     </Compile>
