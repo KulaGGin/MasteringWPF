@@ -67,7 +67,10 @@
     <Compile Include="Controls\BoundlessTextBlock.xaml.cs">
       <DependentUpon>BoundlessTextBlock.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ForcedContainerItemsControlView.xaml.cs">
+    <Compile Include="Controls\ForcedContainerItemsControl.xaml.cs">
+      <DependentUpon>ForcedContainerItemsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ForcedContainerItemsControlView\ForcedContainerItemsControlView.xaml.cs">
       <DependentUpon>ForcedContainerItemsControlView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MeterView.xaml.cs">
@@ -151,7 +154,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ForcedContainerItemsControlView.xaml">
+    <Page Include="Controls\ForcedContainerItemsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ForcedContainerItemsControlView\ForcedContainerItemsControlView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,6 +195,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ButtonView\ButtonViewResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ForcedContainerItemsControlView\ForcedContainerItemsControlViewResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

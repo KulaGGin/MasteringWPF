@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views.ForcedContainerItemsControlView">
+    <ItemsPanelTemplate x:Key="HorizontalPanelTemplate">
+        <StackPanel Orientation="Horizontal" />
+    </ItemsPanelTemplate>
+    <Style TargetType="{x:Type Rectangle}">
+        <Setter Property="Width" Value="75" />
+        <Setter Property="Height" Value="75" />
+        <Setter Property="RadiusX" Value="15" />
+        <Setter Property="RadiusY" Value="15" />
+    </Style>
+    <DataTemplate x:Key="EllipseDataTemplate" DataType="{x:Type UIElement}">
+        <Ellipse Width="16" Height="{Binding Width, RelativeSource={RelativeSource Self}}" Stroke="Gray" StrokeThickness="2" Margin="8">
+            <Ellipse.Style>
+                <Style TargetType="{x:Type Ellipse}">
+                    <Setter Property="Fill" Value="Transparent" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}"
+                                             Value="True">
+                            <Setter Property="Fill" Value="DarkGray" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+    </DataTemplate>
+    <Style x:Key="HiddenListBoxItems" TargetType="{x:Type ListBoxItem}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                    <ContentPresenter />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="HiddenListBox" TargetType="{x:Type ListBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBox}">
+                    <ScrollViewer>
+                        <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </ScrollViewer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

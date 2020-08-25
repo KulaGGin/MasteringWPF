@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Kulagin.MasteringWPF.Views.ForcedContainerItemsControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
+             xmlns:Controls="clr-namespace:Kulagin.MasteringWPF.Views.Controls"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ForcedContainerItemsControlViewResources.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ListBox Name="ListBox" Height="105" Margin="20,20,20,0" ItemsPanel="{StaticResource HorizontalPanelTemplate}">
+            <Rectangle Fill="Red" />
+            <Rectangle Fill="Orange" />
+            <Rectangle Fill="Green" />
+        </ListBox>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Items, ElementName=ListBox}"
+                 ItemsPanel="{StaticResource HorizontalPanelTemplate}"
+                 ItemTemplate="{StaticResource EllipseDataTemplate}"
+                 SelectedItem="{Binding SelectedItem, ElementName=ListBox}"
+                 Style="{StaticResource HiddenListBox}"
+                 ItemContainerStyle="{StaticResource HiddenListBoxItems}"
+                 HorizontalAlignment="Center" />
+    </Grid>
+</UserControl>
