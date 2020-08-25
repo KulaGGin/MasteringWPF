@@ -45,6 +45,9 @@
         <DataTemplate DataType="{x:Type ViewModels:BuiltInControlsViewModel}">
             <Views:BuiltInControlsView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:SpreadsheetViewModel}">
+            <Views:SpreadsheetView />
+        </DataTemplate>
 
 
         <!--Data Templates-->
