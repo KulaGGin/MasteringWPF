@@ -4,6 +4,7 @@
           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
           xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
           xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views.Controls"
+          xmlns:Converters="clr-namespace:Kulagin.MasteringWPF.Converters;assembly=Kulagin.MasteringWPF.Converters"
           mc:Ignorable="d" 
           AutoGenerateColumns="False" SelectionUnit="Cell" SelectionMode="Single"
           IsReadOnly="True" RowHeight="20" RowHeaderWidth="26" ColumnHeaderHeight="26"
@@ -13,6 +14,7 @@
           VerticalGridLinesBrush="{DynamicResource GridlinesBrush}"
           BorderBrush="{DynamicResource BorderBrush}">
     <DataGrid.Resources>
+        <Converters:DataGridRowToRowNumberConverter x:Key="DataGridRowToRowNumberConverter" />
         <Color x:Key="BackgroundColor">#FFE6E6E6</Color>
         <Color x:Key="BorderColor">#FF999999</Color>
         <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}" />
@@ -20,5 +22,57 @@
         <SolidColorBrush x:Key="SelectedBackgroundBrush" Color="#FFD2D2D2" />
         <SolidColorBrush x:Key="GridlinesBrush" Color="#FFD4D4D4" />
         <SolidColorBrush x:Key="SelectionBrush" Color="#FF217346" />
+
+        <!--Default Selection Colors-->
+        <SolidColorBrush
+            x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
+        <SolidColorBrush
+            x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+        <SolidColorBrush
+            x:Key="{x:Static DataGrid.FocusBorderBrushKey}" Color="Transparent" />
+        <SolidColorBrush x:Key="{x:Static
+SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent" />
+        <LinearGradientBrush x:Key="HorizontalBorderGradient" StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="{StaticResource BackgroundColor}" />
+            <GradientStop Color="{StaticResource BorderColor}" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="VerticalBorderGradient" StartPoint="0,0"
+                             EndPoint="1,0">
+            <GradientStop Color="{StaticResource BackgroundColor}" />
+            <GradientStop Color="{StaticResource BorderColor}" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="DiagonalBorderGradient" StartPoint="0.2,0"
+                             EndPoint="1,1">
+            <GradientStop Color="{StaticResource BackgroundColor}" Offset="0.45" />
+            <GradientStop Color="{StaticResource BorderColor}" Offset="1" />
+        </LinearGradientBrush>
+        <Style TargetType="{x:Type DataGridRowHeader}">
+            <Setter Property="Background"
+                    Value="{StaticResource BackgroundBrush}" />
+            <Setter Property="BorderThickness" Value="0,0,1,1" />
+            <Setter Property="BorderBrush"
+                    Value="{StaticResource VerticalBorderGradient}" />
+            <Setter Property="Padding" Value="4,0" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="Background"
+                    Value="{StaticResource BackgroundBrush}" />
+            <Setter Property="BorderThickness" Value="0,0,1,1" />
+            <Setter Property="BorderBrush"
+                    Value="{StaticResource HorizontalBorderGradient}" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="13" />
+        </Style>
     </DataGrid.Resources>
+    <DataGrid.RowHeaderTemplate>
+        <DataTemplate>
+            <TextBlock Text="{Binding Path = .,
+                                      RelativeSource={RelativeSource AncestorType={x:Type DataGridRow}},
+                                      Converter={StaticResource DataGridRowToRowNumberConverter}}" />
+        </DataTemplate>
+    </DataGrid.RowHeaderTemplate>
 </DataGrid>
