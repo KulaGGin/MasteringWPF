@@ -70,6 +70,9 @@
     <Compile Include="Controls\ForcedContainerItemsControl.xaml.cs">
       <DependentUpon>ForcedContainerItemsControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Spreadsheet.xaml.cs">
+      <DependentUpon>Spreadsheet.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ForcedContainerItemsControlView\ForcedContainerItemsControlView.xaml.cs">
       <DependentUpon>ForcedContainerItemsControlView.xaml</DependentUpon>
     </Compile>
@@ -155,6 +158,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ForcedContainerItemsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Spreadsheet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
