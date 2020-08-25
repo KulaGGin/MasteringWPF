@@ -4,9 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
+             xmlns:ViewModels="clr-namespace:Kulagin.MasteringWPF.ViewModels;assembly=Kulagin.MasteringWPF.ViewModels"
              xmlns:Controls="clr-namespace:Kulagin.MasteringWPF.Views.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ViewModels:SpreadsheetViewModel x:Key="SpreadsheetViewModel" />
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -36,6 +40,10 @@
         <StackPanel Grid.Row="1" Grid.Column="0">
             <TextBlock Text="Forced Container Example" Style="{StaticResource DemonstrationLabel}" />
             <local:ForcedContainerItemsControlView HorizontalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Spreadsheet Example" Style="{StaticResource DemonstrationLabel}" />
+            <ContentControl Content="{StaticResource SpreadsheetViewModel}" />
         </StackPanel>
     </Grid>
 </UserControl>
