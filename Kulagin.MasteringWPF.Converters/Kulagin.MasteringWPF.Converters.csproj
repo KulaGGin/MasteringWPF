@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BaseVisibilityConverter.cs" />
     <Compile Include="BoolToVisibilityConverter.cs" />
+    <Compile Include="DataGridColumnHeaderSelectionMultiConverter.cs" />
     <Compile Include="DataGridRowHeaderSelectionMultiConverter.cs" />
     <Compile Include="DataGridRowToRowNumberConverter.cs" />
     <Compile Include="EnumToBoolConverter.cs" />
