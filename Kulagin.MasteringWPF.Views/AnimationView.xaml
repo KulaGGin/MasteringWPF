@@ -26,14 +26,16 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="2" Grid.Column="0">
-            <TextBlock Text="Acceleration &amp; Deceleration Ratio" Style="{StaticResource DemonstrationLabel}" />
-            <Rectangle Width="0" Height="0" Fill="Orange">
+            <TextBlock Text="Rectangle Animation" Style="{StaticResource DemonstrationLabel}" />
+            <Rectangle Width="0" Height="1" Fill="Orange">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="Loaded">
                         <BeginStoryboard>
-                            <Storyboard Duration="0:0:5" AutoReverse="True" SpeedRatio="0.5">
-                                <DoubleAnimation Storyboard.TargetProperty="Width" To="300.0" Duration="0:0:2.5" AutoReverse="True" />
-                                <DoubleAnimation Storyboard.TargetProperty="Height" To="300.0" Duration="0:0:5" SpeedRatio="2" />
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="300.0" Duration="0:0:2" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height" To="300.0" Duration="0:0:2" BeginTime="0:0:2" />
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="0.0" Duration="0:0:2" BeginTime="0:0:4" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height" To="0.0" Duration="0:0:2" BeginTime="0:0:4" />
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
