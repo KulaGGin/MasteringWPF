@@ -25,22 +25,47 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="2">
+        <StackPanel Grid.Row="2" Grid.Column="0">
             <TextBlock Text="Acceleration &amp; Deceleration Ratio" Style="{StaticResource DemonstrationLabel}" />
             <Rectangle Width="0" Height="0" Fill="Orange">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="Loaded">
                         <BeginStoryboard>
                             <Storyboard Duration="0:0:5" AutoReverse="True" SpeedRatio="0.5">
-                                <DoubleAnimation Storyboard.TargetProperty="Width" To="300.0"
-                                                 Duration="0:0:2.5" AutoReverse="True" />
-                                <DoubleAnimation Storyboard.TargetProperty="Height" To="300.0"
-                                                 Duration="0:0:5" SpeedRatio="2" />
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="300.0" Duration="0:0:2.5" AutoReverse="True" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height" To="300.0" Duration="0:0:5" SpeedRatio="2" />
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock Text="Acceleration &amp; Deceleration Ratio" Style="{StaticResource DemonstrationLabel}" />
+            <StackPanel Margin="20" Width="260">
+                <StackPanel.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever" Duration="0:0:1.5" SpeedRatio="0.5" Storyboard.TargetProperty="Width">
+                                <DoubleAnimation Storyboard.TargetName="RectangleA" AccelerationRatio="1.0" From="0" To="300" />
+                                <DoubleAnimation Storyboard.TargetName="RectangleB" AccelerationRatio="0.8" DecelerationRatio="0.2" From="0" To="300" />
+                                <DoubleAnimation Storyboard.TargetName="RectangleC" AccelerationRatio="0.6" DecelerationRatio="0.4" From="0" To="300" />
+                                <DoubleAnimation Storyboard.TargetName="RectangleD" AccelerationRatio="0.5" DecelerationRatio="0.5" From="0" To="300" />
+                                <DoubleAnimation Storyboard.TargetName="RectangleE" AccelerationRatio="0.4" DecelerationRatio="0.6" From="0" To="300" />
+                                <DoubleAnimation Storyboard.TargetName="RectangleF" AccelerationRatio="0.2" DecelerationRatio="0.8" From="0" To="300" />
+                                <DoubleAnimation Storyboard.TargetName="RectangleG" DecelerationRatio="1.0" From="0" To="300" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </StackPanel.Triggers>
+                <Rectangle Name="RectangleA" Fill="#FF0000" Height="30" />
+                <Rectangle Name="RectangleB" Fill="#D5002B" Height="30" />
+                <Rectangle Name="RectangleC" Fill="#AB0055" Height="30" />
+                <Rectangle Name="RectangleD" Fill="#800080" Height="30" />
+                <Rectangle Name="RectangleE" Fill="#5500AB" Height="30" />
+                <Rectangle Name="RectangleF" Fill="#2B00D5" Height="30" />
+                <Rectangle Name="RectangleG" Fill="#0000FF" Height="30" />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
