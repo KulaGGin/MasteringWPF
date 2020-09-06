@@ -69,5 +69,22 @@
                 <Rectangle Name="RectangleG" Fill="#0000FF" Height="30" />
             </StackPanel>
         </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="Fill Behavior" Style="{StaticResource DemonstrationLabel}" />
+            <StackPanel Margin="20" Width="200" Height="220" >
+                <StackPanel.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard Duration="0:0:1.5" SpeedRatio="0.5" Storyboard.TargetProperty="Opacity">
+                                <DoubleAnimation Storyboard.TargetName="FillRectangleA" To="0.0" FillBehavior="HoldEnd" />
+                                <DoubleAnimation Storyboard.TargetName="FillRectangleB" To="0.0" FillBehavior="Stop" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </StackPanel.Triggers>
+                <Rectangle Name="FillRectangleA" Fill="Orange" Height="100" HorizontalAlignment="Stretch" Margin="0,0,0,20" />
+                <Rectangle Name="FillRectangleB" Fill="Orange" Height="100" HorizontalAlignment="Stretch" />
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </UserControl>
