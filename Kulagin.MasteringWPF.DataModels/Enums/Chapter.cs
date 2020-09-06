@@ -39,6 +39,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         [Description("Adapting the Built-in Controls")]
         Six = 6,
         /// <summary>
+        /// Represents chapter 7 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Mastering Practical Animations")]
+        Seven = 7,
+        /// <summary>
         /// Represents chapter 8 in the related Mastering Windows Presentaion Foundation demonstration application.
         /// </summary>
         [Description("Creating Visually Appealing User Interfaces")]
