@@ -59,6 +59,23 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         [Description("Built-in Controls")]
         BuiltInControls,
 
+        /// <summary>
+        /// Represents the Animation page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Animation")]
+        Animation,
+
+        /// <summary>
+        /// Represents the Easing Animation page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Easing Animation")]
+        EasingAnimation,
+
+        /// <summary>
+        /// Represents the Animated Panel page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Animated Panel")]
+        AnimatedPanel,
 
     }
 }
