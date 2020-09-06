@@ -48,6 +48,9 @@
         <DataTemplate DataType="{x:Type ViewModels:SpreadsheetViewModel}">
             <Views:SpreadsheetView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:AnimationViewModel}">
+            <Views:AnimationView />
+        </DataTemplate>
 
 
         <!--Data Templates-->
