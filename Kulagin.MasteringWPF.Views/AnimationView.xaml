@@ -31,11 +31,11 @@
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="Loaded">
                         <BeginStoryboard>
-                            <Storyboard Duration="0:0:2.5">
+                            <Storyboard Duration="0:0:5" AutoReverse="True" SpeedRatio="0.5">
                                 <DoubleAnimation Storyboard.TargetProperty="Width" To="300.0"
-                                                 Duration="0:0:2.5" />
+                                                 Duration="0:0:2.5" AutoReverse="True" />
                                 <DoubleAnimation Storyboard.TargetProperty="Height" To="300.0"
-                                                 Duration="0:0:5" />
+                                                 Duration="0:0:5" SpeedRatio="2" />
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
