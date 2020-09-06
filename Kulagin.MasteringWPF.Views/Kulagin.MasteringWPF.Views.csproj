@@ -57,6 +57,9 @@
     <Compile Include="AllUsersView.xaml.cs">
       <DependentUpon>AllUsersView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AnimationView.xaml.cs">
+      <DependentUpon>AnimationView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Attached\ButtonProperties.cs" />
     <Compile Include="BitRateView.xaml.cs">
       <DependentUpon>BitRateView.xaml</DependentUpon>
@@ -146,6 +149,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AllUsersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
