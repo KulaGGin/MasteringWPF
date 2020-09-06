@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AdornerViewModel.cs" />
     <Compile Include="AllUsersViewModel.cs" />
+    <Compile Include="AnimationViewModel.cs" />
     <Compile Include="BaseViewModel.cs" />
     <Compile Include="BitRateViewModel.cs" />
     <Compile Include="BuiltInControlsViewModel.cs" />
