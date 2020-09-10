@@ -7,6 +7,39 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Width="250" Margin="20">
+            <TextBlock Text="Bounce Ease" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,75" />
+            <Canvas>
+                <Ellipse Width="50" Height="50" Fill="Orange" Stroke="Black" StrokeThickness="3">
+                    <Ellipse.Triggers>
+                        <EventTrigger RoutedEvent="Loaded">
+                            <BeginStoryboard>
+                                <Storyboard RepeatBehavior="Forever">
+                                    <Storyboard Storyboard.TargetProperty="(Canvas.Top)">
+                                        <DoubleAnimation Duration="00:00:3" From="0" To="200">
+                                            <DoubleAnimation.EasingFunction>
+                                                <BounceEase EasingMode="EaseOut" Bounces="10" Bounciness="1.5" />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                    <Storyboard Storyboard.TargetProperty="(Canvas.Left)">
+                                        <DoubleAnimation Duration="00:00:3.5" From="0" To="200" DecelerationRatio="0.2" />
+                                    </Storyboard>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Ellipse.Triggers>
+                </Ellipse>
+                <Line Canvas.Top="250" Canvas.Left="25" X1="0" Y1="1.5" X2="225" Y2="1.5" Stroke="Black" StrokeThickness="3" />
+            </Canvas>
+        </StackPanel>
     </Grid>
 </UserControl>
