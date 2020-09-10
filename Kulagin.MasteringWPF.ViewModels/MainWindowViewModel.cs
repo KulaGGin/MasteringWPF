@@ -62,6 +62,7 @@ namespace Kulagin.MasteringWPF.ViewModels {
             pages.Add(new PageModel(typeof(BuiltInControlsViewModel), Page.BuiltInControls, Chapter.Six));
             pages.Add(new PageModel(typeof(AnimationViewModel), Page.Animation, Chapter.Seven));
             pages.Add(new PageModel(typeof(ButtonViewModel), Page.Button, Chapter.Eight));
+            pages.Add(new PageModel(typeof(EasingAnimationViewModel), Page.EasingAnimation, Chapter.Eight));
         }
     }
 }
