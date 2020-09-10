@@ -96,7 +96,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0">
             <TextBlock Text="Handoff Behavior" Style="{StaticResource DemonstrationLabel}" />
-            <Canvas>
+            <Canvas Height="310">
                 <Rectangle Canvas.Top="200" Canvas.Left="25" Width="100" Height="100" Fill="Orange" Stroke="Black" StrokeThickness="3">
                     <Rectangle.Style>
                         <Style TargetType="{x:Type Rectangle}">
