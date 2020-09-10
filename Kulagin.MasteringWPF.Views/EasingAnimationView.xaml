@@ -61,5 +61,25 @@
                 </Rectangle.Triggers>
             </Rectangle>
         </StackPanel>
+        <StackPanel Grid.Row="1" Height="150" Margin="20">
+            <TextBlock Text="Back Ease" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,30" />
+            <Canvas ClipToBounds="True" Height="150">
+                <TextBox Canvas.Top="50" Canvas.Left="-150" Width="150" Height="25">
+                    <TextBox.Triggers>
+                        <EventTrigger RoutedEvent="Loaded">
+                            <BeginStoryboard>
+                                <Storyboard Storyboard.TargetProperty="(Canvas.Left)" Duration="00:00:2" RepeatBehavior="Forever">
+                                    <DoubleAnimation Duration="00:00:1" From="-150" To="50">
+                                        <DoubleAnimation.EasingFunction>
+                                            <BackEase EasingMode="EaseOut" Amplitude="0.75" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBox.Triggers>
+                </TextBox>
+            </Canvas>
+        </StackPanel>
     </Grid>
 </UserControl>
