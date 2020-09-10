@@ -41,5 +41,25 @@
                 <Line Canvas.Top="250" Canvas.Left="25" X1="0" Y1="1.5" X2="225" Y2="1.5" Stroke="Black" StrokeThickness="3" />
             </Canvas>
         </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Height="400" Margin="20">
+            <TextBlock Text="Elastic Ease" Style="{StaticResource DemonstrationLabel}" Margin="0,0,0,40" />
+            <Rectangle Canvas.Top="250" Canvas.Left="25" Width="25" Height="50" Fill="Orange" Stroke="Black" StrokeThickness="3">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever">
+                                <Storyboard Storyboard.TargetProperty="Height">
+                                    <DoubleAnimation Duration="00:00:3" From="50" To="200">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseOut" Oscillations="6" Springiness="2" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+        </StackPanel>
     </Grid>
 </UserControl>
