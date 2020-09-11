@@ -3,9 +3,7 @@ using Kulagin.MasteringWPF.Managers.Interfaces;
 using MessageBoxButton = Kulagin.MasteringWPF.DataModels.Enums.MessageBoxButton;
 using MessageBoxButtonSelection = Kulagin.MasteringWPF.DataModels.Enums.MessageBoxButtonSelection;
 using MessageBoxIcon = Kulagin.MasteringWPF.DataModels.Enums.MessageBoxIcon;
-using System.Windows;
 using Kulagin.MasteringWPF.DataModels.Enums;
-using Kulagin.MasteringWPF.Managers.Interfaces;
 
 
 namespace Kulagin.MasteringWPF.Managers {
