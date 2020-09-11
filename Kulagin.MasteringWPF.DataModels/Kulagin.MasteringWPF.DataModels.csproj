@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +56,7 @@
     <Compile Include="Enums\MessageBoxButtonSelection.cs" />
     <Compile Include="Enums\MessageBoxIcon.cs" />
     <Compile Include="Enums\Page.cs" />
+    <Compile Include="Interfaces\IAnimatable.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
     <Compile Include="Interfaces\ISynchronizableDataModel.cs" />
     <Compile Include="Invoice.cs" />
