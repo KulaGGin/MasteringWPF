@@ -7,14 +7,16 @@ using Kulagin.MasteringWPF.DataModels.Interfaces;
 
 
 namespace Kulagin.MasteringWPF.DataModels {
-    public class User : BaseSynchronizableDataModel<User>, IAuditable {
+    public class User : BaseSynchronizableDataModel<User>, IAuditable, IAnimatable {
         private Address address = new Address();
         private Auditable auditable;
+        private Animatable animatable;
         private Guid id = Guid.Empty;
         private string name = string.Empty;
         private int age = 0;
 
         public User(Guid id, string name, int age) {
+            Animatable = new Animatable(this);
             Id = id;
             Name = name;
             Age = age;
@@ -45,6 +47,11 @@ namespace Kulagin.MasteringWPF.DataModels {
         public Auditable Auditable {
             get { return auditable; }
             set { auditable = value; }
+        }
+
+        public Animatable Animatable {
+            get { return animatable; }
+            set { animatable = value; }
         }
 
         #region Overrides of BaseSynchronizableDataModel<User>
