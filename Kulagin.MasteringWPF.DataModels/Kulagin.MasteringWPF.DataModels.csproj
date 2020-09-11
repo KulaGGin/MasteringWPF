@@ -57,6 +57,7 @@
     <Compile Include="Enums\MessageBoxButtonSelection.cs" />
     <Compile Include="Enums\MessageBoxIcon.cs" />
     <Compile Include="Enums\Page.cs" />
+    <Compile Include="Enums\RemovalStatus.cs" />
     <Compile Include="Interfaces\IAnimatable.cs" />
     <Compile Include="Interfaces\IAuditable.cs" />
     <Compile Include="Interfaces\ISynchronizableDataModel.cs" />
