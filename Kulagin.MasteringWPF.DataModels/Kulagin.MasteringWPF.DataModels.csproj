@@ -48,6 +48,7 @@
     <Compile Include="BaseDataModel.cs" />
     <Compile Include="BaseSynchronizableDataModel.cs" />
     <Compile Include="Cell.cs" />
+    <Compile Include="Collections\BaseAnimatableCollection.cs" />
     <Compile Include="Collections\BaseCollection.cs" />
     <Compile Include="Collections\BaseSynchronizableCollection.cs" />
     <Compile Include="Enums\AdditionStatus.cs" />
