@@ -80,6 +80,7 @@
     <Compile Include="EasingAnimationView.xaml.cs">
       <DependentUpon>EasingAnimationView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\AnimatedStackPanel.cs" />
     <Compile Include="SpreadsheetView.xaml.cs">
       <DependentUpon>SpreadsheetView.xaml</DependentUpon>
     </Compile>
