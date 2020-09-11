@@ -218,5 +218,36 @@
                 </Rectangle.Triggers>
             </Rectangle>
         </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="20 15">
+            <TextBlock Text="Path Animation" Style="{StaticResource DemonstrationLabel}" />
+            <TextBlock Margin="100,125" Text="Hello World" FontSize="18">
+                <TextBlock.RenderTransform>
+                    <MatrixTransform x:Name="MatrixTransform">
+                        <MatrixTransform.Matrix>
+                            <Matrix />
+                        </MatrixTransform.Matrix>
+                    </MatrixTransform>
+                </TextBlock.RenderTransform>
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <MatrixAnimationUsingPath
+                                    Storyboard.TargetName="MatrixTransform" Storyboard.TargetProperty="Matrix"
+                                    Duration="0:0:4" RepeatBehavior="Forever" DoesRotateWithTangent="True">
+                                    <MatrixAnimationUsingPath.PathGeometry>
+                                        <PathGeometry>
+                                            <PathFigure StartPoint="49.99,49.99">
+                                                <ArcSegment Point="50,50" Size="50,50" SweepDirection="Clockwise" IsLargeArc="True" />
+                                            </PathFigure>
+                                        </PathGeometry>
+                                    </MatrixAnimationUsingPath.PathGeometry>
+                                </MatrixAnimationUsingPath>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </UserControl>
