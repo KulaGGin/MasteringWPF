@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="Animatable.cs" />
     <Compile Include="Auditable.cs" />
     <Compile Include="BaseDataModel.cs" />
     <Compile Include="BaseSynchronizableDataModel.cs" />
