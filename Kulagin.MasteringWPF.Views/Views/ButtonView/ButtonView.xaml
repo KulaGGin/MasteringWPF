@@ -25,6 +25,15 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+        <StackPanel>
+            <TextBlock Text="Shadow" Style="{StaticResource DemonstrationLabel}" />
+            <Button Content="Click Me" Width="140" Height="34" FontSize="18">
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="6" BlurRadius="6"
+                                      Direction="270" Opacity="0.5" />
+                </Button.Effect>
+            </Button>
+        </StackPanel>
         <StackPanel Grid.Row="3" Style="{StaticResource GridCentered}">
             <TextBlock Text="Round Button" Style="{StaticResource DemonstrationLabel}" />
             <Button Content="Go" Style="{StaticResource RoundButtonStyle}"  />
