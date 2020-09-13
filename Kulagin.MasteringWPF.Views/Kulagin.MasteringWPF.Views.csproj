@@ -117,6 +117,9 @@
     <Compile Include="ViewModelLocators\BaseViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\UserViewModelLocator.cs" />
     <Compile Include="ViewModelLocators\ViewModelLocator.cs" />
+    <Compile Include="VisuallyAppealingView.xaml.cs">
+      <DependentUpon>VisuallyAppealingView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WeightMeasurementsView.xaml.cs">
       <DependentUpon>WeightMeasurementsView.xaml</DependentUpon>
     </Compile>
@@ -229,6 +232,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ForcedContainerItemsControlView\ForcedContainerItemsControlViewResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisuallyAppealingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
