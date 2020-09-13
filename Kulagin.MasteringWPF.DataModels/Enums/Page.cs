@@ -48,12 +48,6 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         Meter,
 
         /// <summary>
-        /// Represents the Button page in the related Mastering Windows Presentaion Foundation demonstration application.
-        /// </summary>
-        [Description("Button")]
-        Button,
-
-        /// <summary>
         /// Represents the BuiltInControls page in the related Mastering Windows Presentaion Foundation demonstration application.
         /// </summary>
         [Description("Built-in Controls")]
@@ -76,6 +70,12 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Animated Panel")]
         AnimatedPanel,
+
+        /// <summary>
+        /// Represents the Button page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Button")]
+        Button,
 
     }
 }
