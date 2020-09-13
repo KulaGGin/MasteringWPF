@@ -54,6 +54,9 @@
         <DataTemplate DataType="{x:Type ViewModels:EasingAnimationViewModel}">
             <Views:EasingAnimationView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:VisuallyAppealingViewModel}">
+            <Views:VisuallyAppealingView />
+        </DataTemplate>
 
 
         <!--Data Templates-->
