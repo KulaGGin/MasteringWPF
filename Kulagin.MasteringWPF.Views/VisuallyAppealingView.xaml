@@ -7,6 +7,39 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="348">
+            <TextBlock Name="TextBlock" FontFamily="Candara" Text="APPLICATION NAME" FontSize="40" FontWeight="Bold">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Orange" />
+                        <GradientStop Color="Red" Offset="0.5" />
+                        <GradientStop Color="Orange" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Rectangle Height="31" Margin="0,-11.6,0,0">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{Binding ElementName=TextBlock}">
+                        <VisualBrush.RelativeTransform>
+                            <ScaleTransform ScaleY="-1.0" CenterX="0.5" CenterY="0.5" />
+                        </VisualBrush.RelativeTransform>
+                    </VisualBrush>
+                </Rectangle.Fill>
+                <Rectangle.OpacityMask>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#DF000000" />
+                        <GradientStop Color="Transparent" Offset="0.8" />
+                    </LinearGradientBrush>
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </StackPanel>
     </Grid>
 </UserControl>
