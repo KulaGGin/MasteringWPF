@@ -73,6 +73,9 @@
     <Compile Include="Controls\BoundlessTextBlock.xaml.cs">
       <DependentUpon>BoundlessTextBlock.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CalloutWindow.xaml.cs">
+      <DependentUpon>CalloutWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DataGridBoundTemplateColumn.cs" />
     <Compile Include="Controls\ForcedContainerItemsControl.xaml.cs">
       <DependentUpon>ForcedContainerItemsControl.xaml</DependentUpon>
@@ -179,6 +182,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\BoundlessTextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\CalloutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
