@@ -77,5 +77,10 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         [Description("Button")]
         Button,
 
+        /// <summary>
+        /// Represents the Visually Appealing page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Visually Appealing")]
+        VisuallyAppealing,
     }
 }
