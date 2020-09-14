@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arc.cs" />
+    <Compile Include="Enums\GlowMode.cs" />
     <Compile Include="Enums\SphereColor.cs" />
     <Compile Include="Gauge.cs" />
     <Compile Include="Meter.cs" />
