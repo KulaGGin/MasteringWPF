@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kulagin.MasteringWPF.Views"
              xmlns:Attached="clr-namespace:Kulagin.MasteringWPF.Views.Attached"
+             xmlns:CustomControls="clr-namespace:Kulagin.MasteringWPF.CustomControls;assembly=Kulagin.MasteringWPF.CustomControls"
              mc:Ignorable="d">
     <UserControl.Resources>
         <ResourceDictionary>
@@ -15,10 +16,10 @@
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -56,6 +57,19 @@
                 </Button.Template>
             </Button>
         </StackPanel>
+        <StackPanel Grid.Row="2" >
+            <TextBlock Text="Horizontal Glowing Effect" Style="{StaticResource DemonstrationLabel}" />
+            <CustomControls:GlowButton Content="Glowing button" GlowMode="HorizontalCenterMovement" GlowColor="Purple" FontSize="18" Foreground="White" Width="200" Height="40" Margin="0,15,0,0" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="Centered Glowing Effect" Style="{StaticResource DemonstrationLabel}" />
+            <CustomControls:GlowButton Content="Glowing button" GlowMode="NoCenterMovement" GlowColor="Red" FontSize="18" Foreground="White" Width="200" Height="40" Margin="0,15,0,0" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2">
+            <TextBlock Text="Full Movement Glowing Effect" Style="{StaticResource DemonstrationLabel}" />
+            <CustomControls:GlowButton Content="Glowing button" GlowMode="FullCenterMovement" GlowColor="Purple" FontSize="18" Foreground="White" Width="200" Height="40" Margin="0,15,0,0" />
+        </StackPanel>
+
         <StackPanel Grid.Row="3" Style="{StaticResource GridCentered}">
             <TextBlock Text="Round Button" Style="{StaticResource DemonstrationLabel}" />
             <Button Content="Go" Style="{StaticResource RoundButtonStyle}"  />
