@@ -105,11 +105,15 @@
         <!--Colors-->
         <Color x:Key="PacktOrangeColor">#FFF36F25</Color>
         <Color x:Key="PacktBlackColor">#FF34383B</Color>
+        <Color x:Key="TransparentWhiteColor">#7FFFFFFF</Color>
+        <Color x:Key="TransparentBlackColor">#7F000000</Color>
 
 
         <!--Brushes-->
         <SolidColorBrush x:Key="PacktOrange" Color="{StaticResource PacktOrangeColor}" />
         <SolidColorBrush x:Key="PacktBlack" Color="{StaticResource PacktBlackColor}" />
+        <SolidColorBrush x:Key="TransparentWhite" Color="{StaticResource TransparentWhiteColor}" />
+        <SolidColorBrush x:Key="TransparentBlack" Color="{StaticResource TransparentBlackColor}" />
 
 
         <RadialGradientBrush x:Key="LayeredButtonBackgroundBrush" RadiusX="1.85" RadiusY="0.796" Center="1.018,-0.115" GradientOrigin="0.65,-0.139">
