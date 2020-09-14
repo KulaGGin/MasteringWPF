@@ -58,6 +58,7 @@
     <Compile Include="Enums\GlowMode.cs" />
     <Compile Include="Enums\SphereColor.cs" />
     <Compile Include="Gauge.cs" />
+    <Compile Include="GlowButton.cs" />
     <Compile Include="Meter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
