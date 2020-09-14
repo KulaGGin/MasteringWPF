@@ -56,5 +56,9 @@
             <TextBlock Grid.Row="1" Text="{Binding InCount}" HorizontalAlignment="Center" Margin="0,10,0,0" />
             <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding OutCount}" HorizontalAlignment="Center" Margin="0,10,0,0" />
         </Grid>
+        <CustomControls:Gauge Grid.Row="1" Width="400" Height="300"
+                              MaximumValue="{Binding InCount}" Value="{Binding OutCount}"
+                              Title="Support Tickets Cleared" Foreground="White" FontSize="34"
+                              Padding="10" />
     </Grid>
 </UserControl>
