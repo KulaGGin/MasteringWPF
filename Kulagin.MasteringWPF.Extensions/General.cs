@@ -45,5 +45,15 @@ namespace Kulagin.MasteringWPF.Extensions {
         public static void AddRange<T>(this ICollection<T> collection, ICollection<T> range) {
             foreach(T item in range) collection.Add(item);
         }
+
+        /// <summary>
+        /// Appends the text input parameter to the end of the StringBuilder text if it does not already contain it.
+        /// </summary>
+        /// <param name="stringBuilder">The this StringBuilder.</param>
+        /// <param name="text">The text to append to the StringBuilder object if it is unique.</param>
+        public static void AppendUniqueOnNewLineIfNotEmpty(this StringBuilder stringBuilder, string text) {
+            if(text.Trim().Length > 0 && !stringBuilder.ToString().Contains(text))
+                stringBuilder.AppendFormat("{0}{1}", stringBuilder.ToString().Trim().Length == 0 ? string.Empty : Environment.NewLine, text);
+        }
     }
 }
