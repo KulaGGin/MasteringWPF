@@ -196,6 +196,7 @@
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="Margin" Value="0,0,0,10" />
             <Setter Property="Padding" Value="1.5,2" />
+            <Setter Property="ToolTip" Value="{Binding (Validation.Errors).CurrentItem.ErrorContent, RelativeSource={RelativeSource Self}}" />
         </Style>
 
     </Application.Resources>
