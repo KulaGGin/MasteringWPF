@@ -59,6 +59,7 @@
     <Compile Include="MeterViewModel.cs" />
     <Compile Include="Mocks\MockUserViewModel.cs" />
     <Compile Include="ProductViewModel.cs" />
+    <Compile Include="ProductViewModelExtended.cs" />
     <Compile Include="RightControlsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpreadsheetViewModel.cs" />
