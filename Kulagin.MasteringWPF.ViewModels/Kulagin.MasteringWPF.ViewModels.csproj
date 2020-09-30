@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdornerViewModel.cs" />
+    <Compile Include="AllProductsViewModel.cs" />
     <Compile Include="AllUsersViewModel.cs" />
     <Compile Include="AnimationViewModel.cs" />
     <Compile Include="BaseViewModel.cs" />
