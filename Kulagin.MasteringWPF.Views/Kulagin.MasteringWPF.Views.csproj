@@ -93,6 +93,9 @@
     <Compile Include="ProductView.xaml.cs">
       <DependentUpon>ProductView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductViewExtended.xaml.cs">
+      <DependentUpon>ProductViewExtended.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SpreadsheetView.xaml.cs">
       <DependentUpon>SpreadsheetView.xaml</DependentUpon>
     </Compile>
@@ -212,6 +215,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ProductView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductViewExtended.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
