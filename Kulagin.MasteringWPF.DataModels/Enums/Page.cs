@@ -94,5 +94,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Basic Product")]
         ProductViewModel,
+
+        /// <summary>
+        /// Represents the Extended Product page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Extended Product")]
+        ProductViewModelExtended,
     }
 }
