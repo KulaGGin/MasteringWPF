@@ -82,5 +82,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Visually Appealing")]
         VisuallyAppealing,
+
+        /// <summary>
+        /// Represents the Validation page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Validation")]
+        Validation,
     }
 }
