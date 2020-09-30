@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
@@ -54,6 +55,15 @@ namespace Kulagin.MasteringWPF.Extensions {
         public static void AppendUniqueOnNewLineIfNotEmpty(this StringBuilder stringBuilder, string text) {
             if(text.Trim().Length > 0 && !stringBuilder.ToString().Contains(text))
                 stringBuilder.AppendFormat("{0}{1}", stringBuilder.ToString().Trim().Length == 0 ? string.Empty : Environment.NewLine, text);
+        }
+
+        /// <summary>
+        /// Adds the text as an item into the collection if it does not already exist in it.
+        /// </summary>
+        /// <param name="collection">The this collection.</param>
+        /// <param name="text">The text to add as an item if it is unique.</param>
+        public static void AddUniqueIfNotEmpty(this ObservableCollection<string> collection, string text) {
+            if(!string.IsNullOrEmpty(text) && !collection.Contains(text)) collection.Add(text);
         }
     }
 }
