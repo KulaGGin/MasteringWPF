@@ -63,6 +63,9 @@
         <DataTemplate DataType="{x:Type ViewModels:AllProductsViewModel}">
             <Views:AllProductsView />
         </DataTemplate>
+        <DataTemplate x:Key="WrapTemplate">
+            <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+        </DataTemplate>
 
 
         <!--Data Templates-->
@@ -198,6 +201,7 @@
             <Setter Property="Padding" Value="1.5,2" />
             <Setter Property="ToolTip" Value="{Binding (Validation.Errors).CurrentItem.ErrorContent, RelativeSource={RelativeSource Self}}" />
         </Style>
+
 
     </Application.Resources>
 </Application>
