@@ -54,6 +54,9 @@
     <Compile Include="AdornerView.xaml.cs">
       <DependentUpon>AdornerView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AllProductsView.xaml.cs">
+      <DependentUpon>AllProductsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AllUsersView.xaml.cs">
       <DependentUpon>AllUsersView.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="AdornerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllProductsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
