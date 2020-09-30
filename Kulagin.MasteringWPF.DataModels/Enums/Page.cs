@@ -88,5 +88,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Validation")]
         Validation,
+
+        /// <summary>
+        /// Represents the Basic Product page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Basic Product")]
+        ProductViewModel,
     }
 }
