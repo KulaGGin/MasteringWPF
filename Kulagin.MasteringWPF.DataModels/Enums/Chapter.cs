@@ -48,5 +48,10 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Creating Visually Appealing User Interfaces")]
         Eight = 8,
+        /// <summary>
+        /// Represents chapter 9 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Implementing Responsive Data Validation")]
+        Nine = 9,
     }
 }
