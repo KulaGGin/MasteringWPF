@@ -58,6 +58,7 @@
     <Compile Include="MenuViewModel.cs" />
     <Compile Include="MeterViewModel.cs" />
     <Compile Include="Mocks\MockUserViewModel.cs" />
+    <Compile Include="ProductNotifyViewModel.cs" />
     <Compile Include="ProductViewModel.cs" />
     <Compile Include="ProductViewModelExtended.cs" />
     <Compile Include="RightControlsViewModel.cs" />
