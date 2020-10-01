@@ -46,6 +46,7 @@
     <Compile Include="Animatable.cs" />
     <Compile Include="Auditable.cs" />
     <Compile Include="BaseDataModel.cs" />
+    <Compile Include="BaseNotifyValidationModel.cs" />
     <Compile Include="BaseSynchronizableDataModel.cs" />
     <Compile Include="BaseValidationModel.cs" />
     <Compile Include="BaseValidationModelExtended.cs" />
