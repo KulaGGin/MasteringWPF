@@ -69,6 +69,9 @@
         <DataTemplate x:Key="WrapTemplate">
             <TextBlock Text="{Binding}" TextWrapping="Wrap" />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:ProductNotifyViewModel}">
+            <Views:ProductNotifyView />
+        </DataTemplate>
 
 
         <!--Data Templates-->
