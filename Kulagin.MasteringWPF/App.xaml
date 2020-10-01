@@ -63,6 +63,9 @@
         <DataTemplate DataType="{x:Type ViewModels:AllProductsViewModel}">
             <Views:AllProductsView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:ProductViewModelExtended}">
+            <Views:ProductViewExtended />
+        </DataTemplate>
         <DataTemplate x:Key="WrapTemplate">
             <TextBlock Text="{Binding}" TextWrapping="Wrap" />
         </DataTemplate>
