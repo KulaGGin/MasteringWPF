@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kulagin.MasteringWPF.DataModels.Attributes;
+
 
 namespace Kulagin.MasteringWPF.DataModels {
     /// <summary>
@@ -35,7 +37,7 @@ namespace Kulagin.MasteringWPF.DataModels {
         /// Gets or sets the price of the ProductNotify object.
         /// </summary>
         //[Range(0.01, (double)decimal.MaxValue, ErrorMessage = "Please enter a valid price for the product.")]
-        //[Minimum(0.01, ErrorMessage = "Please enter a valid price for the product.")]
+        [Minimum(0.01, ErrorMessage = "Please enter a valid price for the product.")]
         public decimal Price {
             get { return price; }
             set { if(price != value) { price = value; NotifyPropertyChangedAndValidate(); } }
