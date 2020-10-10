@@ -72,6 +72,9 @@
         <DataTemplate DataType="{x:Type ViewModels:ProductNotifyViewModel}">
             <Views:ProductNotifyView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:ProductNotifyViewModelExtended}">
+            <Views:ProductViewExtended />
+        </DataTemplate>
 
 
         <!--Data Templates-->
