@@ -93,6 +93,9 @@
     <Compile Include="ProductNotifyView.xaml.cs">
       <DependentUpon>ProductNotifyView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductNotifyViewExtended.xaml.cs">
+      <DependentUpon>ProductNotifyViewExtended.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProductView.xaml.cs">
       <DependentUpon>ProductView.xaml</DependentUpon>
     </Compile>
@@ -218,6 +221,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ProductNotifyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductNotifyViewExtended.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
