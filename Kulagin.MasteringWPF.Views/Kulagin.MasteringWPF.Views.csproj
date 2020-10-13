@@ -89,6 +89,9 @@
     <Compile Include="EasingAnimationView.xaml.cs">
       <DependentUpon>EasingAnimationView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ErrorTemplateView.xaml.cs">
+      <DependentUpon>ErrorTemplateView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Panels\AnimatedStackPanel.cs" />
     <Compile Include="ProductNotifyView.xaml.cs">
       <DependentUpon>ProductNotifyView.xaml</DependentUpon>
@@ -217,6 +220,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EasingAnimationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrorTemplateView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
