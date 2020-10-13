@@ -61,6 +61,7 @@
     <Compile Include="Collections\ProductsExtended.cs" />
     <Compile Include="Collections\ProductsNotify.cs" />
     <Compile Include="Collections\ProductsNotifyExtended.cs" />
+    <Compile Include="Collections\ProductsNotifyGeneric.cs" />
     <Compile Include="Enums\AdditionStatus.cs" />
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\Chapter.cs" />
