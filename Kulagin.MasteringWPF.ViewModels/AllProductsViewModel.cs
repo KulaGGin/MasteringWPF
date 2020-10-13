@@ -59,6 +59,7 @@ namespace Kulagin.MasteringWPF.ViewModels {
             pages.Add(new PageModel(typeof(ProductViewModel), Page.ProductViewModel, Chapter.Four));
             pages.Add(new PageModel(typeof(ProductViewModelExtended), Page.ProductViewModelExtended, Chapter.Four));
             pages.Add(new PageModel(typeof(ProductNotifyViewModel), Page.ProductNotifyViewModel, Chapter.Four));
+            pages.Add(new PageModel(typeof(ErrorTemplateViewModel), Page.ErrorTemplate, Chapter.Four));
         }
     }
 }
