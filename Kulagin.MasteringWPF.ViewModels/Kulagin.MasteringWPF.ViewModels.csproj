@@ -52,6 +52,7 @@
     <Compile Include="ButtonViewModel.cs" />
     <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="EasingAnimationViewModel.cs" />
+    <Compile Include="ErrorTemplateViewModel.cs" />
     <Compile Include="Interfaces\IUserViewModel.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="MenuItemViewModel.cs" />
