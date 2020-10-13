@@ -64,6 +64,7 @@
       <DependentUpon>AnimationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Attached\ButtonProperties.cs" />
+    <Compile Include="Attached\TextBoxProperties.cs" />
     <Compile Include="BitRateView.xaml.cs">
       <DependentUpon>BitRateView.xaml</DependentUpon>
     </Compile>
