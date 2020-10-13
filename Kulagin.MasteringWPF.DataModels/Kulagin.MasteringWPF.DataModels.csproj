@@ -50,6 +50,7 @@
     <Compile Include="BaseDataModel.cs" />
     <Compile Include="BaseNotifyValidationModel.cs" />
     <Compile Include="BaseNotifyValidationModelExtended.cs" />
+    <Compile Include="BaseNotifyValidationModelGeneric.cs" />
     <Compile Include="BaseSynchronizableDataModel.cs" />
     <Compile Include="BaseValidationModel.cs" />
     <Compile Include="BaseValidationModelExtended.cs" />
