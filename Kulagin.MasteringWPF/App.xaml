@@ -214,6 +214,33 @@
             <Setter Property="ToolTip" Value="{Binding (Validation.Errors).CurrentItem.ErrorContent, RelativeSource={RelativeSource Self}}" />
         </Style>
 
+        <RadialGradientBrush x:Key="BlueGlow" Center="0.5,0.848"
+                             GradientOrigin="0.5,0.818" RadiusX="-1.424" RadiusY="-0.622"
+                             RelativeTransform="{StaticResource GlowTransformGroup}">
+            <GradientStop Color="#CF01C7FF" Offset="0.168" />
+            <GradientStop Color="#4B01C7FF" Offset="0.478" />
+            <GradientStop Color="#1101C7FF" Offset="1" />
+        </RadialGradientBrush>
+        <RadialGradientBrush x:Key="RedGlow" Center="0.5,0.848"
+                             GradientOrigin="0.5,0.818" RadiusX="-1.424" RadiusY="-0.622"
+                             RelativeTransform="{StaticResource GlowTransformGroup}">
+            <GradientStop Color="#CFFF0000" Offset="0.168" />
+            <GradientStop Color="#4BFF0000" Offset="0.478" />
+            <GradientStop Color="#00FF0000" Offset="1" />
+        </RadialGradientBrush>
+
+        <Style x:Key="GlowStyle" TargetType="{x:Type Rectangle}">
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="Opacity" Value="1.0" />
+            <Setter Property="StrokeThickness" Value="0" />
+            <Setter Property="RadiusX" Value="2.5" />
+            <Setter Property="RadiusX" Value="2.5" />
+            <Setter Property="IsHitTestVisible" Value="False" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Fill" Value="{StaticResource BlueGlow}" />
+        </Style>
+
 
     </Application.Resources>
 </Application>
