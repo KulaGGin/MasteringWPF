@@ -112,5 +112,11 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Product Notify Extended")]
         ProductNotifyViewModelExtended,
+
+        /// <summary>
+        /// Represents the Error Template page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Error Template")]
+        ErrorTemplate
     }
 }
