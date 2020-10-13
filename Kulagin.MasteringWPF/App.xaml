@@ -74,6 +74,9 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type ViewModels:ProductNotifyViewModelExtended}">
             <Views:ProductViewExtended />
+        </DataTemplate>      
+        <DataTemplate DataType="{x:Type ViewModels:ErrorTemplateViewModel}">
+            <Views:ErrorTemplateView />
         </DataTemplate>
 
 
