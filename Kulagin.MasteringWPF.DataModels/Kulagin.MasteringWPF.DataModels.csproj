@@ -66,6 +66,7 @@
     <Compile Include="Enums\AdditionStatus.cs" />
     <Compile Include="Enums\BitRate.cs" />
     <Compile Include="Enums\Chapter.cs" />
+    <Compile Include="Enums\DataOperationError.cs" />
     <Compile Include="Enums\FeedbackType.cs" />
     <Compile Include="Enums\MessageBoxButton.cs" />
     <Compile Include="Enums\MessageBoxButtonSelection.cs" />
