@@ -81,6 +81,9 @@
       <DependentUpon>CalloutWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\DataGridBoundTemplateColumn.cs" />
+    <Compile Include="Controls\FeedbackControl.xaml.cs">
+      <DependentUpon>FeedbackControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ForcedContainerItemsControl.xaml.cs">
       <DependentUpon>ForcedContainerItemsControl.xaml</DependentUpon>
     </Compile>
@@ -165,6 +168,10 @@
       <Project>{9603d835-0916-4601-a4f1-0bcfc1163502}</Project>
       <Name>Kulagin.MasteringWPF.DataModels</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Kulagin.MasteringWPF.Extensions\Kulagin.MasteringWPF.Extensions.csproj">
+      <Project>{3151a73e-aa0e-4f24-bec1-8ba0aab67083}</Project>
+      <Name>Kulagin.MasteringWPF.Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kulagin.MasteringWPF.Managers\Kulagin.MasteringWPF.Managers.csproj">
       <Project>{35B0DB72-BCA2-4EB1-BCBC-148DF9572BA0}</Project>
       <Name>Kulagin.MasteringWPF.Managers</Name>
@@ -212,6 +219,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\CalloutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\FeedbackControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
