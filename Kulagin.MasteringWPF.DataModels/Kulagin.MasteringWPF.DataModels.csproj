@@ -58,6 +58,7 @@
     <Compile Include="Collections\BaseAnimatableCollection.cs" />
     <Compile Include="Collections\BaseCollection.cs" />
     <Compile Include="Collections\BaseSynchronizableCollection.cs" />
+    <Compile Include="Collections\FeedbackCollection.cs" />
     <Compile Include="Collections\ProductsExtended.cs" />
     <Compile Include="Collections\ProductsNotify.cs" />
     <Compile Include="Collections\ProductsNotifyExtended.cs" />
