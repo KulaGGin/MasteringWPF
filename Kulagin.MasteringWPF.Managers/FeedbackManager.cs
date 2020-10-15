@@ -37,6 +37,10 @@ namespace Kulagin.MasteringWPF.Managers {
             Add(new Feedback(message, isSuccess));
         }
 
+        public void Add<T>(DataOperationResult<T> result, bool isPermanent) {
+            Add(new Feedback(result.Description, result.IsSuccess, isPermanent));
+        }
+
         #region INotifyPropertyChanged Members
 
         public event PropertyChangedEventHandler PropertyChanged;
