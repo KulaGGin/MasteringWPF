@@ -29,10 +29,13 @@ namespace Kulagin.MasteringWPF {
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e) {
             MainWindowViewModel viewModel = new MainWindowViewModel();
+            viewModel.LoadSettings();
             DataContext = viewModel;
         }
 
         private void MainWindow_Closed(object sender, EventArgs e) {
+            MainWindowViewModel viewModel = (MainWindowViewModel)DataContext;
+            viewModel.SaveSettings();
         }
 
         #region Overrides of Window
