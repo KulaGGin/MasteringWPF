@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Kulagin.MasteringWPF.DataModels;
 using Kulagin.MasteringWPF.DataModels.Collections;
 using Kulagin.MasteringWPF.DataModels.Interfaces;
+using Kulagin.MasteringWPF.Managers;
 
 
 namespace Kulagin.MasteringWPF.ViewModels {
@@ -46,6 +47,13 @@ namespace Kulagin.MasteringWPF.ViewModels {
             if(index > 0 && index < collection.Count &&
                collection.CurrentItem != collection[index])
                 collection.CurrentItem = collection[index];
+        }
+
+        /// <summary>
+        /// Gets the StateManager object that is responsible for maintaining global state in the application.
+        /// </summary>
+        public StateManager StateManager {
+            get { return StateManager.Instance; }
         }
 
         #region INotifyPropertyChanged Members
