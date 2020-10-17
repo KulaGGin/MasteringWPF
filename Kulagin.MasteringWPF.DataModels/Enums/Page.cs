@@ -124,5 +124,9 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Drawing")]
         Drawing,
+
+        [Description("Text View")]
+        Text,
+
     }
 }
