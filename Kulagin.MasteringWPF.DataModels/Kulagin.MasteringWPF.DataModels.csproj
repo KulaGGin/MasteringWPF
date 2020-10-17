@@ -74,6 +74,7 @@
     <Compile Include="Enums\MessageBoxIcon.cs" />
     <Compile Include="Enums\Page.cs" />
     <Compile Include="Enums\RemovalStatus.cs" />
+    <Compile Include="Enums\RenderingTier.cs" />
     <Compile Include="Enums\TransitionStatus.cs" />
     <Compile Include="Enums\ValidationLevel.cs" />
     <Compile Include="Feedback.cs" />
