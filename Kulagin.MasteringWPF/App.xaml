@@ -241,6 +241,18 @@
             <Setter Property="Fill" Value="{StaticResource BlueGlow}" />
         </Style>
 
+        <Style TargetType="{x:Type TextBox}">
+            <!-- Define default TextBox style here -->
+        </Style>
+        <Style x:Key="FocusableTextBoxStyle" TargetType="{x:Type TextBox}"
+               BasedOn="{StaticResource {x:Type TextBox}}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsFocused}" Value="True">
+                    <Setter Property="FocusManager.FocusedElement"
+                            Value="{Binding RelativeSource={RelativeSource Self}}" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
 
     </Application.Resources>
 </Application>
