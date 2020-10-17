@@ -50,6 +50,7 @@
     <Compile Include="Interfaces\IUiThreadManager.cs" />
     <Compile Include="Interfaces\IWindowManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateManager.cs" />
     <Compile Include="UiThreadManager.cs" />
     <Compile Include="WindowManager.cs" />
   </ItemGroup>
