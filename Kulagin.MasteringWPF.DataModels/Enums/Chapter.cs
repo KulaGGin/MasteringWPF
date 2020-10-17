@@ -53,5 +53,10 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// </summary>
         [Description("Implementing Responsive Data Validation")]
         Nine = 9,
+        /// <summary>
+        /// Represents chapter 11 in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Improving Application Performance")]
+        Eleven = 11,
     }
 }
