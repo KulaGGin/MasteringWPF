@@ -80,6 +80,9 @@
         </DataTemplate>   
         <DataTemplate DataType="{x:Type ViewModels:DrawingViewModel}">
             <Views:DrawingView />
+        </DataTemplate>   
+        <DataTemplate DataType="{x:Type ViewModels:TextViewModel}">
+            <Views:TextView />
         </DataTemplate>
 
 
