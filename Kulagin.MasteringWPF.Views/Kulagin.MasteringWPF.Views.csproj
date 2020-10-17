@@ -87,6 +87,7 @@
     <Compile Include="Controls\ForcedContainerItemsControl.xaml.cs">
       <DependentUpon>ForcedContainerItemsControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\FormattedTextOutput.cs" />
     <Compile Include="Controls\SmileyFace.cs" />
     <Compile Include="Controls\Spreadsheet.xaml.cs">
       <DependentUpon>Spreadsheet.xaml</DependentUpon>
