@@ -14,6 +14,8 @@ using Kulagin.MasteringWPF.Managers;
 namespace Kulagin.MasteringWPF.ViewModels {
     public class BaseViewModel : INotifyPropertyChanged {
 
+        private bool isFocused = false;
+
         public T AddNewDataTypeToCollection<S, T>(S collection)
             where S : BaseSynchronizableCollection<T>
             where T : BaseSynchronizableDataModel<T>, new() {
@@ -49,11 +51,18 @@ namespace Kulagin.MasteringWPF.ViewModels {
                 collection.CurrentItem = collection[index];
         }
 
-        /// <summary>
-        /// Gets the StateManager object that is responsible for maintaining global state in the application.
-        /// </summary>
         public StateManager StateManager {
             get { return StateManager.Instance; }
+        }
+
+        public bool IsFocused {
+            get { return isFocused; }
+            set {
+                if(isFocused != value) {
+                    isFocused = value;
+                    NotifyPropertyChanged();
+                }
+            }
         }
 
         #region INotifyPropertyChanged Members
