@@ -67,6 +67,7 @@ namespace Kulagin.MasteringWPF.ViewModels {
             pages.Add(new PageModel(typeof(ButtonViewModel), Page.Button, Chapter.Eight));
             pages.Add(new PageModel(typeof(VisuallyAppealingViewModel), Page.VisuallyAppealing, Chapter.Eight));
             pages.Add(new PageModel(typeof(AllProductsViewModel), Page.Validation, Chapter.Nine));
+            pages.Add(new PageModel(typeof(DrawingViewModel), Page.Drawing, Chapter.Eleven));
         }
 
         public void LoadSettings() {
