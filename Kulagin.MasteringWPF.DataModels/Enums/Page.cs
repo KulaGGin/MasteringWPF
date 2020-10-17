@@ -117,6 +117,12 @@ namespace Kulagin.MasteringWPF.DataModels.Enums {
         /// Represents the Error Template page in the related Mastering Windows Presentaion Foundation demonstration application.
         /// </summary>
         [Description("Error Template")]
-        ErrorTemplate
+        ErrorTemplate,
+
+        /// <summary>
+        /// Represents the Drawing page in the related Mastering Windows Presentaion Foundation demonstration application.
+        /// </summary>
+        [Description("Drawing")]
+        Drawing,
     }
 }
