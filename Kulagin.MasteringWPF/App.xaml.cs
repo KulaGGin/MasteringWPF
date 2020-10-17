@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
+using Kulagin.MasteringWPF.DataModels.Enums;
 using Kulagin.MasteringWPF.Managers;
 using Kulagin.MasteringWPF.Models.Interfaces;
 using Kulagin.MasteringWPF.ViewModels;
@@ -17,10 +19,16 @@ namespace Kulagin.MasteringWPF {
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application {
+
+        public App() {
+            StateManager.Instance.RenderingTier = (RenderingTier)(RenderCapability.Tier >> 16);
+        }
+
         public void App_Startup(object sender, StartupEventArgs e) {
             RegisterDependencies();
             new MainWindow().Show();
         }
+
         private void RegisterDependencies() {
             DependencyManager.Instance.ClearRegistrations();
             DependencyManager.Instance.Register<IDataProvider, MockDataProvider>();
