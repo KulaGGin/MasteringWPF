@@ -91,6 +91,9 @@
     <Compile Include="Controls\Spreadsheet.xaml.cs">
       <DependentUpon>Spreadsheet.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DrawingView.xaml.cs">
+      <DependentUpon>DrawingView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EasingAnimationView.xaml.cs">
       <DependentUpon>EasingAnimationView.xaml</DependentUpon>
     </Compile>
@@ -232,6 +235,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Spreadsheet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DrawingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
