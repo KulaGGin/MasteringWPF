@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Kulagin.MasteringWPF.DataModels;
 using Kulagin.MasteringWPF.DataModels.Enums;
+using Kulagin.MasteringWPF.Managers;
+using Kulagin.MasteringWPF.ViewModels.Properties;
 
 
 namespace Kulagin.MasteringWPF.ViewModels {
@@ -65,6 +67,17 @@ namespace Kulagin.MasteringWPF.ViewModels {
             pages.Add(new PageModel(typeof(ButtonViewModel), Page.Button, Chapter.Eight));
             pages.Add(new PageModel(typeof(VisuallyAppealingViewModel), Page.VisuallyAppealing, Chapter.Eight));
             pages.Add(new PageModel(typeof(AllProductsViewModel), Page.Validation, Chapter.Nine));
+        }
+
+        public void LoadSettings() {
+            Settings.Default.Reload();
+            StateManager.AreAuditFieldsVisible = Settings.Default.AreAuditFieldsVisible;
+            StateManager.AreSearchTermsSaved = Settings.Default.AreSearchTermsSaved;
+        }
+        public void SaveSettings() {
+            Settings.Default.AreAuditFieldsVisible = StateManager.AreAuditFieldsVisible;
+            Settings.Default.AreSearchTermsSaved = StateManager.AreSearchTermsSaved;
+            Settings.Default.Save();
         }
     }
 }
